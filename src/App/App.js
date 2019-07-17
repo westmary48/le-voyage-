@@ -12,6 +12,9 @@ import 'firebase/auth';
 import Auth from '../components/Auth/Auth';
 import Home from '../components/Home/Home';
 import MyNavbar from '../components/MyNavbar/MyNavbar';
+import NewTrip from '../components/NewTrip/NewTrip';
+import EditTrip from '../components/EditTrip/EditTrip';
+import SingleTrip from '../components/SingleTrip/SingleTrip';
 
 import './App.scss';
 
@@ -59,23 +62,29 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <BrowserRouter>
-        <React.Fragment>
-          <MyNavbar authed={authed} />
-          <div className = 'container'>
-            <div className = 'row'>
-              <Switch>
-                <PublicRoute path= '/auth' component= {Auth} authed = {authed}/>
-                <PrivateRoute path= '/home' component = {Home} authed = {authed} />
-                <Redirect from = "*" to= "/auth" />
-              </Switch>
+       <BrowserRouter>
+          <React.Fragment>
+            <MyNavbar authed={authed} />
+            <div className='container'>
+              <div className="row">
+                <Switch>
+                  <PublicRoute path='/auth' component={Auth} authed={authed}/>
+                  <PrivateRoute path='/home' component={Home} authed={authed}/>
+
+                  <PrivateRoute path='/new' component={NewTrip} authed={authed}/>
+                  <PrivateRoute path='/edit/:id' component={EditTrip} authed={authed}/>
+                  <PrivateRoute path='/trip/:id' component={SingleTrip} authed={authed}/>
+
+                  <Redirect from="*" to="/auth" />
+                </Switch>
+              </div>
             </div>
-          </div>
-        </React.Fragment>
+          </React.Fragment>
         </BrowserRouter>
       </div>
     );
   }
 }
+
 
 export default App;
