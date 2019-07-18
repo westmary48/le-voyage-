@@ -21,7 +21,10 @@ const getMyTrips = uid => new Promise((resolve, reject) => {
 
 const getSingleTrip = tripId => axios.get(`${baseUrl}/trips/${tripId}.json`);
 
+const deleteTrip = tripId => axios.delete(`${baseUrl}/trips/${tripId}.json`);
+
 export default {
   getMyTrips,
   getSingleTrip,
+  deleteTrip,
 };
