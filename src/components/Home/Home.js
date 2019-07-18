@@ -1,22 +1,39 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import firebase from 'firebase/app';
+import 'firebase/auth';
+
+import tripData from '../../helpers/data/tripData';
+
+import TripCard from '../TripCard/TripCard';
 
 import './Home.scss';
 
 class Home extends React.Component {
-  editEvent = (e) => {
-    e.preventDefault();
-    const orderId = '12345';
-    this.props.history.push(`/edit/${orderId}`);
+  state = {
+    trips: [],
+  }
+
+  componentDidMount() {
+    const { uid } = firebase.auth().currentUser;
+    tripData.getMyTrips(uid)
+      .then(trips => this.setState({ trips }))
+      .catch(err => console.error('could not get trips', err));
   }
 
   render() {
-    const singleLink = '/trip/12345';
+    const makeTripCards = this.state.trips.map(trip => (
+      <TripCard
+        key={trip.id}
+        trip={trip}
+      />
+    ));
     return (
-      <div className="Home">
+      <div className="Home col">
         <h1>Home</h1>
-        <button className= "btn btn-danger" onClick = {this.editEvent}>Edit</button>
-        <Link to={singleLink}>View Memory</Link>
+        <div className="d-flex flex-wrap">
+          {makeTripCards}
+        </div>
       </div>
     );
   }
