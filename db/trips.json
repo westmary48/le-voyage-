@@ -1,7 +1,7 @@
 {
   "trips": {
     "trip1": {
-      "uid": "10293859",
+      "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
       "name" : "Euro Trip 2016",
       "description": "Visiting the Eiffel Tower",
       "imageUrl": "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/ab/3e.jpg",
@@ -12,7 +12,7 @@
 
     },
     "trip2": {
-      "uid": "483248",
+      "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
       "name" : "Moroccan Madness",
       "description": "Medina, Marrakech",
       "imageUrl": "https://media.afar.com/uploads/images/afar_post_headers/images/JB1o9l8LLP/original_marrakech-market-morocco.jpg?1536334751",
@@ -23,7 +23,7 @@
 
     },
     "trip3": {
-      "uid": "4803274",
+      "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
       "name" : "Meredith's Bachelorette",
       "description": "View of the pool from our hotel room",
       "imageUrl": "https://www.oyster.com/uploads/sites/35/2019/05/pool-v17145440-1440-1024x683.jpg",
@@ -34,7 +34,7 @@
 
     },
     "trip4": {
-      "uid": "47802374",
+      "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
       "name" : "Marathon 2018",
       "description": "My first Marathon",
       "imageUrl": "http://www.maratonadiroma.it/public/images/600_600_1_start-colosseo.jpg",
@@ -45,7 +45,7 @@
 
     },
     "trip5": {
-      "uid": "",
+      "uid": "11111",
       "name" : "West Family Reunion",
       "description": "swimming in the sun",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
