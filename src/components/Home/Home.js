@@ -14,18 +14,30 @@ class Home extends React.Component {
     trips: [],
   }
 
-  componentDidMount() {
+  getTrips = () => {
     const { uid } = firebase.auth().currentUser;
     tripData.getMyTrips(uid)
       .then(trips => this.setState({ trips }))
       .catch(err => console.error('could not get trips', err));
   }
 
+  componentDidMount() {
+    this.getTrips();
+  }
+
+  deleteTrip = (tripId) => {
+    tripData.deleteTrip(tripId)
+      .then(() => this.getTrips())
+      .catch(err => console.error('unable to delete', err));
+  }
+
+
   render() {
     const makeTripCards = this.state.trips.map(trip => (
       <TripCard
         key={trip.id}
         trip={trip}
+        deleteTrip={this.deleteTrip}
       />
     ));
     return (

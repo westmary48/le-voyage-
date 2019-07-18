@@ -22,7 +22,7 @@ class SingleTrip extends React.Component {
       <div className="SingleTrip">
         <h1>{trip.name}</h1>
         <h2>{trip.description}</h2>
-        <img className = "singleImg" src = {trip.imageUrl}/>
+        <img className = "singleImg" src = {trip.imageUrl} alt = ""/>
         <h4>{trip.startDate}</h4>
         <h5>{trip.endDate}</h5>
         <h5>{trip.city}</h5>
