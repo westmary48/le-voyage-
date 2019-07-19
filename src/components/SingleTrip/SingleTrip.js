@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import tripData from '../../helpers/data/tripData';
 
 import './SingleTrip.scss';
@@ -16,8 +18,16 @@ class SingleTrip extends React.Component {
       .catch(err => console.error('unable to get single trip', err));
   }
 
+  deleteTrip = () => {
+    const tripId = this.props.match.params.id;
+    tripData.deleteTrip(tripId)
+      .then(() => this.props.history.push('/home'))
+      .catch(err => console.error('unable to delete', err));
+  }
+
   render() {
     const { trip } = this.state;
+    const editLink = `/edit/${this.props.match.params.id}`;
     return (
       <div className="SingleTrip">
         <h1>{trip.name}</h1>
@@ -27,6 +37,8 @@ class SingleTrip extends React.Component {
         <h5>{trip.endDate}</h5>
         <h5>{trip.city}</h5>
         <h5>{trip.country}</h5>
+        <Link className="btn btn-primary" to={editLink}>Edit</Link>
+        <button className="btn btn-danger" onClick={this.deleteTrip}>Delete</button>
       </div>
     );
   }

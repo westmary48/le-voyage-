@@ -21,6 +21,7 @@ class TripCard extends React.Component {
   render() {
     const { trip } = this.props;
     const singleLink = `/trip/${trip.id}`;
+    const editLink = `/edit/${trip.id}`;
     return (
       <div className="TripCard col-4">
         <div className="card">
@@ -34,6 +35,7 @@ class TripCard extends React.Component {
             <h6 className="card-title">{trip.city}</h6>
             <h6 className="card-title">{trip.country}</h6>
             <button className="btn btn-danger" onClick={this.deleteThis}>Delete</button>
+            <Link className="btn btn-primary" to={editLink}>Edit</Link>
             </div>
         </div>
       </div>
