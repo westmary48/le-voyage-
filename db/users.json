@@ -1,0 +1,28 @@
+{
+  "user1": {
+    "userName": "Mary West",
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "photo": "https://www.randomlists.com/img/people/barbra_streisand.jpg"
+  },
+    "user2": {
+      "userName": "Zoe Ames",
+      "uid": "2378932",
+      "photo": "https://www.randomlists.com/img/people/barbra_streisand.jpg"
+    },
+      "user3": {
+        "userName": "Mark",
+        "uid": "3849348",
+        "photo": "https://www.randomlists.com/img/people/barbra_streisand.jpg"
+      },
+        "user4": {
+          "userName": "Rob",
+          "uid": "4738924",
+          "photo": "https://www.randomlists.com/img/people/barbra_streisand.jpg"
+        },
+          "user5": {
+            "userName": "Matthew",
+            "uid": "4783429",
+            "photo": "https://www.randomlists.com/img/people/barbra_streisand.jpg"
+          }
+}
+

@@ -1,5 +1,4 @@
 {
-  "trips": {
     "trip1": {
       "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
       "name" : "Euro Trip 2016",
@@ -55,4 +54,3 @@
       "country":"Mexico"
     }
   }
-}
