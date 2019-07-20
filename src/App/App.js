@@ -15,6 +15,7 @@ import MyNavbar from '../components/MyNavbar/MyNavbar';
 import NewTrip from '../components/NewTrip/NewTrip';
 import EditTrip from '../components/EditTrip/EditTrip';
 import SingleTrip from '../components/SingleTrip/SingleTrip';
+import Friends from '../components/Friends/Friends';
 
 import './App.scss';
 
@@ -74,6 +75,8 @@ class App extends React.Component {
                   <PrivateRoute path='/new' component={NewTrip} authed={authed}/>
                   <PrivateRoute path='/edit/:id' component={EditTrip} authed={authed}/>
                   <PrivateRoute path='/trip/:id' component={SingleTrip} authed={authed}/>
+                  <PrivateRoute path='/friends' component={Friends} authed={authed}/>
+
 
                   <Redirect from="*" to="/auth" />
                 </Switch>
