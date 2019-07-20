@@ -53,7 +53,7 @@ class NewTrip extends React.Component {
   render() {
     const { newTrip } = this.state;
     return (
-      <div className="Newtrip">
+      <div className="New Trip">
         <h1>New Trip</h1>
         <form onSubmit={this.formSubmit}>
           <div className="form-group">

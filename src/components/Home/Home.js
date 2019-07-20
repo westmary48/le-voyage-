@@ -41,7 +41,8 @@ class Home extends React.Component {
   }
 
   searchTrips(query) {
-      const trips = this.state.filteredTrips.filter(trip => trip.name.includes(query));
+      const trips = this.state.filteredTrips.filter(trip => trip.name.includes(query)
+      || trip.description.includes(query) || trip.endDate.includes(query) || trip.city.includes(query) || trip.country.includes(query) || trip.startDate.includes(query));
       this.setState({ trips });
     }
 
@@ -56,12 +57,6 @@ class Home extends React.Component {
     return (
       <div className="Home col">
         <Search searchTrips ={this.searchTrips.bind(this)}/>
-        {/* <SearchField
-            placeholder="Search trips"
-            onChange={ this.onChange }
-            searchText=""
-            classNames="search-bar"
-          /> */}
         <h1>Home</h1>
         <div className="d-flex flex-wrap">
           {makeTripCards}
