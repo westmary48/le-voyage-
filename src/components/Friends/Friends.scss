@@ -1,3 +1,13 @@
 .Friends {
-  display: block;
+  .card {
+    margin: 15px 0;
+    .profile-img {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .double-wide {
+      display: inline;
+    }
+  }
 }

@@ -1,21 +1,20 @@
 import React from 'react';
-import firebase from 'firebase/app';
-import 'firebase/auth';
-
 import './Auth.scss';
+import authRequests from '../../helpers/data/authRequests';
 
 class Auth extends React.Component {
-  loginClickEvent = (e) => {
+  authenticateUser = (e) => {
     e.preventDefault();
-    const provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithPopup(provider);
-  };
+    authRequests.authenticate().then(() => {
+      this.props.history.push('/home');
+    }).catch(err => console.error('error in auth', err));
+  }
 
   render() {
     return (
-      <div className="Auth">
-        <h1>Auth</h1>
-        <button className="btn btn-secondary" onClick={this.loginClickEvent}>Login with Google</button>
+      <div className='Auth'>
+        <button className='btn btn-secondary' onClick={this.authenticateUser}>Login with Google
+        </button>
       </div>
     );
   }
