@@ -1,5 +1,5 @@
 
-import friendRequests from './friendData';
+import friendsData from './friendData';
 
 import usersRequest from './usersRequest';
 
@@ -7,8 +7,9 @@ const usersAndFriends = currentUid => new Promise((resolve, reject) => {
   const users = [];
   usersRequest.getAllUsers()
     .then((usrs) => {
-      friendRequests.getMyFriends()
+      friendsData.getAllFriends()
         .then((friends) => {
+          console.error(friends);
           usrs.forEach((user) => {
             const newUser = { ...user };
             newUser.isAccepted = false;

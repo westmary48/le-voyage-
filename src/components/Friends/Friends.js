@@ -80,7 +80,7 @@ render() {
           <img className="profile-img" src={undiscovered.photo} alt={undiscovered.userName}/>
         </div>
         <div className="double-wide">
-          <button className="btn btn-primary delete-button" id={undiscovered.uid} onClick={this.addNewFriend}>Request</button>
+          <button className="btn btn-primary request-button" id={undiscovered.uid} onClick={this.addNewFriend}>Request</button>
         </div>
       </div>
     </div>
