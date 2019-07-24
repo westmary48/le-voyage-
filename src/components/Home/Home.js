@@ -5,8 +5,6 @@ import React from 'react';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
-// import SearchField from 'react-search-field';
-
 import Search from '../Search/Search';
 
 import tripData from '../../helpers/data/tripData';
@@ -44,6 +42,11 @@ class Home extends React.Component {
       const trips = this.state.filteredTrips.filter(trip => trip.name.includes(query)
       || trip.description.includes(query) || trip.endDate.includes(query) || trip.city.includes(query) || trip.country.includes(query) || trip.startDate.includes(query));
       this.setState({ trips });
+    }
+
+    changeView = (e) => {
+      const view = e.currentTarget.id;
+      this.props.history.push(`/${view}`);
     }
 
   render() {

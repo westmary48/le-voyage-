@@ -15,6 +15,10 @@ import MyNavbar from '../components/MyNavbar/MyNavbar';
 import NewTrip from '../components/NewTrip/NewTrip';
 import EditTrip from '../components/EditTrip/EditTrip';
 import SingleTrip from '../components/SingleTrip/SingleTrip';
+import Friends from '../components/Friends/Friends';
+import FriendsTrips from '../components/FriendsTrips/FriendsTrips';
+
+import authRequests from '../helpers/data/authRequests';
 
 import './App.scss';
 
@@ -41,14 +45,22 @@ const PrivateRoute = ({ component: Component, authed, ...rest }) => {
 class App extends React.Component {
   state = {
     authed: false,
+    pendingUser: true,
   }
 
   componentDidMount() {
+    fbConnection();
     this.removeListener = firebase.auth().onAuthStateChanged((user) => {
       if (user) {
-        this.setState({ authed: true });
+        this.setState({
+          authed: true,
+          pendingUser: false,
+        });
       } else {
-        this.setState({ authed: false });
+        this.setState({
+          authed: false,
+          pendingUser: false,
+        });
       }
     });
   }
@@ -58,22 +70,33 @@ class App extends React.Component {
   }
 
   render() {
-    const { authed } = this.state;
+    const { authed, pendingUser } = this.state;
+    const logoutClickEvent = () => {
+      authRequests.logoutUser();
+      this.setState({ authed: false });
+    };
+
+    if (pendingUser) {
+      return null;
+    }
 
     return (
       <div className="App">
        <BrowserRouter>
           <React.Fragment>
-            <MyNavbar authed={authed} />
+            <MyNavbar authed={authed} logoutClickEvent={logoutClickEvent}/>
             <div className='container'>
               <div className="row">
                 <Switch>
-                  <PublicRoute path='/auth' component={Auth} authed={authed}/>
-                  <PrivateRoute path='/home' component={Home} authed={authed}/>
+                <PrivateRoute path='/' exact component={Home} authed={this.state.authed} />
+                  <PrivateRoute path='/home' component={Home} authed={this.state.authed} />
 
                   <PrivateRoute path='/new' component={NewTrip} authed={authed}/>
                   <PrivateRoute path='/edit/:id' component={EditTrip} authed={authed}/>
                   <PrivateRoute path='/trip/:id' component={SingleTrip} authed={authed}/>
+                  <PrivateRoute path='/trip/:id' component={FriendsTrips} authed={authed}/>
+                  <PrivateRoute path='/friends' component={Friends} authed={this.state.authed}/>
+                  <PublicRoute path='/auth' component={Auth} authed={this.state.authed} />
 
                   <Redirect from="*" to="/auth" />
                 </Switch>
