@@ -3,6 +3,8 @@ import friendsData from './friendData';
 
 import usersRequest from './usersRequest';
 
+import tripData from './tripData';
+
 const usersAndFriends = currentUid => new Promise((resolve, reject) => {
   const users = [];
   usersRequest.getAllUsers()
@@ -39,4 +41,19 @@ const usersAndFriends = currentUid => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
-export default { usersAndFriends };
+const getTripsFromMeAndFriends = uid => new Promise((resolve, reject) => {
+  let allTrips = [];
+  tripData.getAllTrips()
+    .then((tripz) => {
+      allTrips = tripz;
+      friendsData.getAllFriends(uid).then((friendsArray) => {
+        friendsArray.push(uid);
+        const tripsToKeep = allTrips.filter(f => friendsArray.includes(f.uid));
+        resolve(tripsToKeep);
+      });
+    })
+    .catch(err => reject(err));
+});
+
+
+export default { usersAndFriends, getTripsFromMeAndFriends };

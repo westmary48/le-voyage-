@@ -31,9 +31,31 @@ userMegaSmash = () => {
     .catch(err => console.error('err in usersAndFriends', err));
 }
 
+getFriendsTrips = () => {
+  const uid = authRequests.getCurrentUid();
+  smashRequests.getTripsFromMeAndFriends(uid)
+    .then((trips) => {
+      this.setState({ trips });
+    })
+    .catch(err => console.error('error with trips GET', err));
+}
+
 componentDidMount() {
   this.userMegaSmash();
+  this.getFriendsTrips();
 }
+
+friendTrips = (e) => {
+  e.preventDefault();
+  const tripId = e.target.id;
+  console.error(tripId);
+  smashRequests.getTripsFromMeAndFriends(tripId)
+    .then(() => {
+      this.getFriendsTrips();
+      console.error(this.getFriendsTrips);
+    })
+    .catch(err => console.error('problem getting friends trips', err));
+};
 
 addNewFriend = (e) => {
   e.preventDefault();
@@ -103,7 +125,6 @@ render() {
       </div>
     </div>
   ));
-
   const myFriendsCards = myFriends.map(mine => (
     <div className="card border-dark" key={mine.id}>
       <h5 className="card-header bg-success">{mine.userName}</h5>
@@ -112,7 +133,8 @@ render() {
           <img className="profile-img" src={mine.photo} alt={mine.userName}/>
         </div>
         <div className="double-wide">
-          <button className="btn btn-danger" id={mine.friendRequestId} onClick={this.friendshipOver}>Nope</button>
+          <button className="btn btn-danger" id={mine.friendRequestId} onClick={this.friendshipOver}>Delete</button>
+          <button className = "btn btn-primary" id={mine.friendRequestId} onClick = {this.friendTrips}>View Friends Trips</button>
         </div>
       </div>
     </div>

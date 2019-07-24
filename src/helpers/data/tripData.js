@@ -19,6 +19,24 @@ const getMyTrips = uid => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
+const getAllTrips = () => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/trips.json`)
+    .then((result) => {
+      const tripObject = result.data;
+      const tripArray = [];
+      if (tripObject != null) {
+        Object.keys(tripObject).forEach((tripId) => {
+          tripObject[tripId].id = tripId;
+          tripArray.push(tripObject[tripId]);
+        });
+      }
+      resolve(tripArray);
+    })
+    .catch((error) => {
+      reject(error);
+    });
+});
+
 const getSingleTrip = tripId => axios.get(`${baseUrl}/trips/${tripId}.json`);
 
 const deleteTrip = tripId => axios.delete(`${baseUrl}/trips/${tripId}.json`);
@@ -33,4 +51,5 @@ export default {
   deleteTrip,
   postTrip,
   putTrip,
+  getAllTrips,
 };

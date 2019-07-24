@@ -16,6 +16,7 @@ import NewTrip from '../components/NewTrip/NewTrip';
 import EditTrip from '../components/EditTrip/EditTrip';
 import SingleTrip from '../components/SingleTrip/SingleTrip';
 import Friends from '../components/Friends/Friends';
+import FriendsTrips from '../components/FriendsTrips/FriendsTrips';
 
 import authRequests from '../helpers/data/authRequests';
 
@@ -93,6 +94,7 @@ class App extends React.Component {
                   <PrivateRoute path='/new' component={NewTrip} authed={authed}/>
                   <PrivateRoute path='/edit/:id' component={EditTrip} authed={authed}/>
                   <PrivateRoute path='/trip/:id' component={SingleTrip} authed={authed}/>
+                  <PrivateRoute path='/trip/:id' component={FriendsTrips} authed={authed}/>
                   <PrivateRoute path='/friends' component={Friends} authed={this.state.authed}/>
                   <PublicRoute path='/auth' component={Auth} authed={this.state.authed} />
 
