@@ -8,8 +8,8 @@
       "endDate":"10/24/2019",
       "city":"Paris",
       "country":"France",
-      "x": 48.8566,
-      "y": 2.3522
+      "lat": 48.8566,
+      "long": 23.3522
     },
     "trip2": {
       "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -20,8 +20,8 @@
       "endDate":"02/28/2019",
       "city":"Marrakech",
       "country":"Morocco",
-      "x": 48.8566,
-      "y": 2.3522
+      "lat": 48.8566,
+      "long": 2.3522
 
     },
     "trip3": {
@@ -33,8 +33,8 @@
       "endDate":"06/22/207",
       "city":"Vegas",
       "country":"United States",
-      "x": 48.8566,
-      "y": 2.3522
+      "lat": 49.8566,
+      "long": 2.3522
     },
     "trip4": {
       "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -45,8 +45,8 @@
       "endDate":"04/14/2018",
       "city":"Rome",
       "country":"Italy",
-      "x": 48.8566,
-      "y": 2.3522
+      "lat": 50.8566,
+      "long": 2.3522
     },
     "trip5": {
       "uid": "11111",
@@ -57,8 +57,8 @@
       "endDate":"08/20/2015",
       "city":"Cabo San Lucas",
       "country":"Mexico",
-      "x": 48.8566,
-      "y": 2.3522
+      "lat": 48.8566,
+      "long": 2.3522
     },
     "trip6": {
       "uid": "11111",
@@ -68,8 +68,8 @@
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
       "city":"Cabo San Lucas",
-      "x": 48.8566,
-      "y": 2.3522
+      "lat": 48.8566,
+      "long": 2.3522
     },
     "trip7": {
       "uid": "11111",
@@ -79,9 +79,7 @@
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
       "city":"Cabo San Lucas",
-      "country":"Mexico",
-      "x": 48.8566,
-      "y": 2.3522
+      "country":"Mexico"
     },
     "trip8": {
       "uid": "11111",
@@ -91,9 +89,7 @@
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
       "city":"Cabo San Lucas",
-      "country":"Mexico",
-      "x": 48.8566,
-      "y": 2.3522
+      "country":"Mexico"
     },
     "trip9": {
       "uid": "11111",
@@ -103,9 +99,7 @@
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
       "city":"Cabo San Lucas",
-      "country":"Mexico",
-      "x": 48.8566,
-      "y": 2.3522
+      "country":"Mexico"
     },
     "trip6": {
       "uid": "11111",
@@ -115,9 +109,7 @@
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
       "city":"Cabo San Lucas",
-      "country":"Mexico",
-      "x": 48.8566,
-      "y": 2.3522
+      "country":"Mexico"
     },
     "trip7": {
       "uid": "11111",
@@ -127,9 +119,7 @@
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
       "city":"Cabo San Lucas",
-      "country":"Mexico",
-      "x": 48.8566,
-      "y": 2.3522
+      "country":"Mexico"
     },
     "trip8": {
       "uid": "11111",
@@ -139,8 +129,6 @@
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
       "city":"Cabo San Lucas",
-      "country":"Mexico",
-      "x": 48.8566,
-      "y": 2.3522
+      "country":"Mexico"
     }
   }

@@ -1,9 +1,16 @@
 import React from 'react';
+
+import firebase from 'firebase/app';
+
+import 'firebase/auth';
+
+import L from 'leaflet';
+
 import {
   Map as LeafletMap, TileLayer, Marker, Popup,
 } from 'react-leaflet';
 import TripMapCard from '../TripMapCard/TripMapCard';
-import tripShape from '../../helpers/propz/tripShape';
+import tripData from '../../helpers/data/tripData';
 import 'leaflet/dist/leaflet.css';
 
 import './MapApplication.scss';
@@ -14,25 +21,37 @@ class MapApplication extends React.Component {
       map: {},
     }
 
-    static propTypes = {
-      trips: tripShape.tripCardShape,
-    }
-
     setMap = (map) => {
       this.setState({ map });
     }
 
+    getMyTrips = () => {
+      const { uid } = firebase.auth().currentUser;
+      tripData.getMyTrips(uid).then((trips) => {
+        this.setState({ trips });
+      })
+        .catch(err => console.error('could not get trips', err));
+    }
+
     componentDidMount() {
       this.map = this.mapInstance.leafletElement;
+      this.setMap();
+      this.getMyTrips();
     }
 
     render() {
+      const icon = L.icon({
+        iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+        iconUrl: require('leaflet/dist/images/marker-icon.png'),
+        shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+      });
       const { trips } = this.state;
-      const makeMap = trips.map(trip => (
+      const tripsMarker = trips.map(trip => (
       <Marker
-        trip={trip}
         key={trip.id}
-        position={[trip.y, trip.x]}
+        position={[trip.lat, trip.long]}
+        trips = {trips}
+        icon = {icon}
       >
       <Popup>
         <TripMapCard trip={trip} />
@@ -57,7 +76,7 @@ class MapApplication extends React.Component {
         <TileLayer
           url='https://{s}.tile.osm.org/{z}/{x}/{y}.png'
         />
-        {makeMap}
+        {tripsMarker}
       </LeafletMap>
       );
     }
