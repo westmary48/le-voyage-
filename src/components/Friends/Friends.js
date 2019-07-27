@@ -48,11 +48,9 @@ componentDidMount() {
 friendTrips = (e) => {
   e.preventDefault();
   const tripId = e.target.id;
-  console.error(tripId);
   smashRequests.getTripsFromMeAndFriends(tripId)
     .then(() => {
       this.getFriendsTrips();
-      console.error(this.getFriendsTrips);
     })
     .catch(err => console.error('problem getting friends trips', err));
 };
@@ -134,7 +132,6 @@ render() {
         </div>
         <div className="double-wide">
           <button className="btn btn-danger" id={mine.friendRequestId} onClick={this.friendshipOver}>Delete</button>
-          <button className = "btn btn-primary" id={mine.friendRequestId} onClick = {this.friendTrips}>View Friends Trips</button>
         </div>
       </div>
     </div>
