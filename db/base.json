@@ -2,5 +2,6 @@
 {
   "trips": "data",
   "friends": "data",
-  "users": "data"
+  "users": "data",
+  "upcoming": "data"
 }
