@@ -15,8 +15,8 @@ class UpcomingItem extends React.Component {
 
   deleteUpcomingTrip = (e) => {
     e.preventDefault();
-    const { deleteSingleUpcoming, future } = this.props;
-    deleteSingleUpcoming(future.id);
+    const { deleteUpcoming, future } = this.props;
+    deleteUpcoming(future.id);
   }
 
   editUpcomingTrip = (e) => {
@@ -33,12 +33,8 @@ class UpcomingItem extends React.Component {
       if (future.uid === uid) {
         return (
           <div className="col-2">
-            <button className="btn btn-default" onClick={this.editUpcomingTrip}>
-              <i className="fas fa-pencil-alt"></i>
-            </button>
-            <button className="btn btn-default" onClick={this.deleteUpcomingTrip}>
-              <i className="fas fa-trash-alt"></i>
-            </button>
+            <button className="btn btn-primary" onClick={this.editUpcomingTrip}>Edit</button>
+            <button className="btn btn-danger" onClick={this.deleteUpcomingTrip}>Delete</button>
           </div>
         );
       }
