@@ -7,7 +7,7 @@ import smashRequests from '../../helpers/data/smashRequests';
 
 import UpcomingItem from '../UpcomingItem/UpcomingItem';
 import UpcomingForm from '../UpcomingForm/UpcomingForm';
-// import Countdown from '../Countdown/Countdown';
+import CountdownUpcoming from '../CountdownUpcoming/CountdownUpcoming';
 
 class UpcomingTrips extends React.Component {
   state = {
@@ -69,11 +69,9 @@ class UpcomingTrips extends React.Component {
 
     return (
       <div className="Upcoming text-center col">
-        <h1>Upcoming Trips</h1>
         <div className="row">
           <div className="col">
-            <h3>Upcoming Trips</h3>
-            <ul>{ upcomingItemComponents }</ul>
+            <div>{ upcomingItemComponents }</div>
           </div>
           <div className="col">
             <UpcomingForm
