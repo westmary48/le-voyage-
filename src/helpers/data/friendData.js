@@ -4,19 +4,27 @@ import firebaseConfig from '../apiKeys.json';
 const baseUrl = firebaseConfig.firebaseKeys.databaseURL;
 
 const getMyFriends = uid => new Promise((resolve, reject) => {
-  axios
-    .get(`${baseUrl}/friends.json?orderBy="uid"&equalTo="${uid}"`)
-    .then((res) => {
-      const friends = [];
-      if (res.data !== null) {
-        Object.keys(res.data).forEach((fbKey) => {
-          res.data[fbKey].id = fbKey;
-          friends.push(res.data[fbKey]);
+  axios.get(`${baseUrl}/friends.json`)
+    .then((result) => {
+      const friendObject = result.data;
+      const friendArray = [];
+      if (friendObject != null) {
+        Object.keys(friendObject).forEach((friendId) => {
+          friendObject[friendId].id = friendId;
+          if (friendObject[friendId].isAccepted && friendObject[friendId].friendUid === uid) {
+            friendArray.push(friendObject[friendId].uid);
+          }
+
+          if (friendObject[friendId].isAccepted && friendObject[friendId].uid === uid) {
+            friendArray.push(friendObject[friendId].friendUid);
+          }
         });
       }
-      resolve(friends);
+      resolve(friendArray);
     })
-    .catch(err => reject(err));
+    .catch((error) => {
+      reject(error);
+    });
 });
 
 const getAllFriends = () => new Promise((resolve, reject) => {

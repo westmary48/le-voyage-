@@ -21,7 +21,8 @@ class Home extends React.Component {
 
   getTrips = () => {
     const { uid } = firebase.auth().currentUser;
-    tripData.getMyTrips(uid).then((trips) => {
+    tripData.getMyTrips(uid)
+    .then((trips) => {
       this.setState({ trips });
       this.setState({ filteredTrips: trips });
     })

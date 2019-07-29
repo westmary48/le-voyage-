@@ -6,10 +6,6 @@ import tripShape from '../../helpers/propz/tripShape';
 
 
 class TripCard extends React.Component {
-  state = {
-    count: 0,
-  }
-
   static propTypes = {
     trip: tripShape.tripCardShape,
     deleteTrip: PropTypes.func.isRequired,
@@ -20,7 +16,6 @@ class TripCard extends React.Component {
     const { trip, deleteTrip } = this.props;
     deleteTrip(trip.id);
   }
-
 
   render() {
     const { trip } = this.props;

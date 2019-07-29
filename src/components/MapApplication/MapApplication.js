@@ -75,6 +75,7 @@ class MapApplication extends React.Component {
       >
         <TileLayer
           url='https://{s}.tile.osm.org/{z}/{x}/{y}.png'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         {tripsMarker}
       </LeafletMap>

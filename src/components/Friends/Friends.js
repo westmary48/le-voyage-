@@ -10,12 +10,14 @@ import authRequests from '../../helpers/data/authRequests';
 import 'firebase/auth';
 
 import './Friends.scss';
+import FriendTripCard from '../FriendTripCard/FriendTripCard';
 
 class Friends extends React.Component {
 state = {
   undiscoveredFriends: [],
   pendingFriendships: [],
   myFriends: [],
+  trips:[],
 }
 
 userMegaSmash = () => {
@@ -136,6 +138,13 @@ render() {
       </div>
     </div>
   ));
+  const myFriendsTripsCards = this.state.trips.map(trip => (
+    <FriendTripCard
+    key={trip.id}
+    trip={trip}
+    deleteTrip={this.deleteTrip}
+  />
+  ));
   return (
 <div className="Friends text-center col">
         <h1>Friends</h1>
@@ -154,6 +163,11 @@ render() {
             <h3>My Friends</h3>
             <hr/>
             { myFriendsCards }
+          </div>
+          <div className="row">
+            <h3>My Friends Trips</h3>
+            <hr/>
+            { myFriendsTripsCards }
           </div>
         </div>
       </div>
