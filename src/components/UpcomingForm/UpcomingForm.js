@@ -44,8 +44,6 @@ class UpcomingForm extends React.Component {
 
   startDateChange = e => this.formFieldStringState('startDate', e);
 
-  endDateChange = e => this.formFieldStringState('endDate', e);
-
   cityChange = e => this.formFieldStringState('city', e);
 
   countryChange = e => this.formFieldStringState('country', e);
@@ -70,8 +68,7 @@ class UpcomingForm extends React.Component {
             city: future.data.city,
             name: future.data.name,
             country: future.data.country,
-            startDate: future.data.startDate,
-            endDate: future.data.startDate,
+            date: future.data.date,
             uid: future.data.uid,
           };
           this.setState({ newUpcoming });
@@ -130,27 +127,15 @@ class UpcomingForm extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="startDate">Start Date:</label>
+            <label htmlFor="startDate">Date:</label>
             <input
               type="text"
               className="form-control"
               id="startDate"
-              aria-describedby="startDateHelp"
+              aria-describedby="dateHelp"
               placeholder="10/13/2000"
               value={newUpcoming.startDate}
               onChange={this.startDateChange}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="endDate">End Date:</label>
-            <input
-              type="text"
-              className="form-control"
-              id="endDate"
-              aria-describedby="endDateHelp"
-              placeholder="10/23/2000"
-              value={newUpcoming.endDate}
-              onChange={this.endDateChange}
             />
           </div>
           <button className="btn btn-danger">Save Upcoming Trip</button>

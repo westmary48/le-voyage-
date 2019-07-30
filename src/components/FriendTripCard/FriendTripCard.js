@@ -23,7 +23,6 @@ class FriendTripCard extends React.Component {
             <h6 className="card-title">{trip.endDate}</h6>
             <h6 className="card-title">{trip.city}</h6>
             <h6 className="card-title">{trip.country}</h6>
-            <button className="btn btn-danger" onClick={this.deleteThis}>Delete</button>
             </div>
         </div>
       </div>

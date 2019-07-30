@@ -17,7 +17,7 @@ state = {
   undiscoveredFriends: [],
   pendingFriendships: [],
   myFriends: [],
-  trips:[],
+  trips: [],
 }
 
 userMegaSmash = () => {
@@ -142,7 +142,6 @@ render() {
     <FriendTripCard
     key={trip.id}
     trip={trip}
-    deleteTrip={this.deleteTrip}
   />
   ));
   return (

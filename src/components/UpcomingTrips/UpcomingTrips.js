@@ -7,7 +7,6 @@ import smashRequests from '../../helpers/data/smashRequests';
 
 import UpcomingItem from '../UpcomingItem/UpcomingItem';
 import UpcomingForm from '../UpcomingForm/UpcomingForm';
-import CountdownUpcoming from '../CountdownUpcoming/CountdownUpcoming';
 
 class UpcomingTrips extends React.Component {
   state = {
@@ -80,8 +79,8 @@ class UpcomingTrips extends React.Component {
               editId={editId}
             />
           </div>
-        </div>
       </div>
+        </div>
     );
   }
 }
