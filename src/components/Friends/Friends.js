@@ -1,13 +1,15 @@
 /* eslint-disable array-callback-return */
 import React from 'react';
 
+import firebase from 'firebase/app';
+import 'firebase/auth';
+
+
 import smashRequests from '../../helpers/data/smashRequests';
 
 import friendRequest from '../../helpers/data/friendData';
 
 import authRequests from '../../helpers/data/authRequests';
-
-import 'firebase/auth';
 
 import './Friends.scss';
 import FriendTripCard from '../FriendTripCard/FriendTripCard';
@@ -93,7 +95,15 @@ confirmFriendship = (e) => {
 }
 
 render() {
-  const { undiscoveredFriends, pendingFriendships, myFriends } = this.state;
+  const {
+    undiscoveredFriends,
+    pendingFriendships,
+    myFriends,
+  } = this.state;
+  const { uid } = firebase.auth().currentUser;
+  console.error(uid);
+  const friendsTrips = this.state.trips.filter(a => a.uid !== uid);
+  console.error(friendsTrips);
   const undiscoveredFriendCards = undiscoveredFriends.map(undiscovered => (
     <div className="card border-dark" key={undiscovered.id}>
       <h5 className="card-header bg-secondary">{undiscovered.userName}</h5>
@@ -138,7 +148,7 @@ render() {
       </div>
     </div>
   ));
-  const myFriendsTripsCards = this.state.trips.map(trip => (
+  const myFriendsTripsCards = friendsTrips.map(trip => (
     <FriendTripCard
     key={trip.id}
     trip={trip}

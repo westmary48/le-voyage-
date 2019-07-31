@@ -19,6 +19,22 @@ const getMyTrips = uid => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
+const getFriendTrips = friendUid => new Promise((resolve, reject) => {
+  axios
+    .get(`${baseUrl}/trips.json?orderBy="friendUid"&equalTo="${friendUid}"`)
+    .then((res) => {
+      const trips = [];
+      if (res.data !== null) {
+        Object.keys(res.data).forEach((fbKey) => {
+          res.data[fbKey].id = fbKey;
+          trips.push(res.data[fbKey]);
+        });
+      }
+      resolve(trips);
+    })
+    .catch(err => reject(err));
+});
+
 const getAllTrips = () => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/trips.json`)
     .then((result) => {
@@ -52,4 +68,5 @@ export default {
   postTrip,
   putTrip,
   getAllTrips,
+  getFriendTrips,
 };

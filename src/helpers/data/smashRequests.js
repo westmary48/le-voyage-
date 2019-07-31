@@ -13,6 +13,7 @@ const usersAndFriends = currentUid => new Promise((resolve, reject) => {
     .then((usrs) => {
       friendsData.getAllFriends()
         .then((friends) => {
+          console.error(friends);
           usrs.forEach((user) => {
             const newUser = { ...user };
             newUser.isAccepted = false;
@@ -69,5 +70,6 @@ const getUpcomingFromMeAndFriends = uid => new Promise((resolve, reject) => {
     })
     .catch(err => reject(err));
 });
+
 
 export default { usersAndFriends, getTripsFromMeAndFriends, getUpcomingFromMeAndFriends };
