@@ -109,6 +109,17 @@ class NewTrip extends React.Component {
                   onUploadSuccess={this.handleUploadSuccess}
                 />
               </div>
+              <div className="form-group">
+            <label htmlFor="startDate">Start Date</label>
+            <input
+              type="text"
+              className="form-control"
+              id="startDate"
+              placeholder="10/20/2019"
+              value={newTrip.startDate}
+              onChange={this.startDateChange}
+            />
+          </div>
           <div className="form-group">
             <label htmlFor="endDate">End Date</label>
             <input
