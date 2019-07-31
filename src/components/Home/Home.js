@@ -61,7 +61,7 @@ class Home extends React.Component {
     return (
       <div className="Home col">
         <Search searchTrips ={this.searchTrips.bind(this)}/>
-        <h1>Home</h1>
+        <h1>My Trips</h1>
         <div className="d-flex flex-wrap">
           {makeTripCards}
         </div>
