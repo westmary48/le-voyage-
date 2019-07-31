@@ -1,21 +1,25 @@
 /* eslint-disable array-callback-return */
 import React from 'react';
 
+import firebase from 'firebase/app';
+import 'firebase/auth';
+
+
 import smashRequests from '../../helpers/data/smashRequests';
 
 import friendRequest from '../../helpers/data/friendData';
 
 import authRequests from '../../helpers/data/authRequests';
 
-import 'firebase/auth';
-
 import './Friends.scss';
+import FriendTripCard from '../FriendTripCard/FriendTripCard';
 
 class Friends extends React.Component {
 state = {
   undiscoveredFriends: [],
   pendingFriendships: [],
   myFriends: [],
+  trips: [],
 }
 
 userMegaSmash = () => {
@@ -91,7 +95,13 @@ confirmFriendship = (e) => {
 }
 
 render() {
-  const { undiscoveredFriends, pendingFriendships, myFriends } = this.state;
+  const {
+    undiscoveredFriends,
+    pendingFriendships,
+    myFriends,
+  } = this.state;
+  const { uid } = firebase.auth().currentUser;
+  const friendsTrips = this.state.trips.filter(a => a.uid !== uid);
   const undiscoveredFriendCards = undiscoveredFriends.map(undiscovered => (
     <div className="card border-dark" key={undiscovered.id}>
       <h5 className="card-header bg-secondary">{undiscovered.userName}</h5>
@@ -136,6 +146,12 @@ render() {
       </div>
     </div>
   ));
+  const myFriendsTripsCards = friendsTrips.map(trip => (
+    <FriendTripCard
+    key={trip.id}
+    trip={trip}
+  />
+  ));
   return (
 <div className="Friends text-center col">
         <h1>Friends</h1>
@@ -154,6 +170,11 @@ render() {
             <h3>My Friends</h3>
             <hr/>
             { myFriendsCards }
+          </div>
+          <div className="row">
+            <h3>My Friends Trips</h3>
+            <hr/>
+            { myFriendsTripsCards }
           </div>
         </div>
       </div>

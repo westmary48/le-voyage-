@@ -1,5 +1,5 @@
 import React from 'react';
-import firebase from 'firebase/app';
+// import firebase from 'firebase/app';
 import 'firebase/auth';
 import PropTypes from 'prop-types';
 import authRequests from '../../helpers/data/authRequests';
@@ -14,7 +14,7 @@ const defaultUpcoming = {
   city: '',
   country: '',
   upcoming: '',
-  startDate: '',
+  date: '',
   endDate: '',
 };
 
@@ -42,9 +42,7 @@ class UpcomingForm extends React.Component {
 
   countryChange = e => this.formFieldStringState('country', e);
 
-  startDateChange = e => this.formFieldStringState('startDate', e);
-
-  endDateChange = e => this.formFieldStringState('endDate', e);
+  dateChange = e => this.formFieldStringState('date', e);
 
   cityChange = e => this.formFieldStringState('city', e);
 
@@ -70,8 +68,7 @@ class UpcomingForm extends React.Component {
             city: future.data.city,
             name: future.data.name,
             country: future.data.country,
-            startDate: future.data.startDate,
-            endDate: future.data.startDate,
+            date: future.data.date,
             uid: future.data.uid,
           };
           this.setState({ newUpcoming });
@@ -130,27 +127,15 @@ class UpcomingForm extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="startDate">Start Date:</label>
+            <label htmlFor="date">Date:</label>
             <input
               type="text"
               className="form-control"
-              id="startDate"
-              aria-describedby="startDateHelp"
-              placeholder="10/13/2000"
-              value={newUpcoming.startDate}
-              onChange={this.startDateChange}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="endDate">End Date:</label>
-            <input
-              type="text"
-              className="form-control"
-              id="endDate"
-              aria-describedby="endDateHelp"
-              placeholder="10/23/2000"
-              value={newUpcoming.endDate}
-              onChange={this.endDateChange}
+              id="date"
+              aria-describedby="dateHelp"
+              placeholder="December 25 2020"
+              value={newUpcoming.date}
+              onChange={this.dateChange}
             />
           </div>
           <button className="btn btn-danger">Save Upcoming Trip</button>

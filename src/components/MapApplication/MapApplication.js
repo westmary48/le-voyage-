@@ -11,6 +11,7 @@ import {
 } from 'react-leaflet';
 import TripMapCard from '../TripMapCard/TripMapCard';
 import tripData from '../../helpers/data/tripData';
+// import mapRequests from '../../helpers/data/mapRequests';
 import 'leaflet/dist/leaflet.css';
 
 import './MapApplication.scss';
@@ -62,7 +63,7 @@ class MapApplication extends React.Component {
       return (
       <LeafletMap
         ref={(e) => { this.mapInstance = e; }}
-        center={[37.0902, -95.7129]}
+        center={[44.0902, 80.7129]}
         zoom={2.5}
         maxZoom={5}
         attributionControl={true}

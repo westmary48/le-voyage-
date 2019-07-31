@@ -13,7 +13,6 @@ const usersAndFriends = currentUid => new Promise((resolve, reject) => {
     .then((usrs) => {
       friendsData.getAllFriends()
         .then((friends) => {
-          console.error(friends);
           usrs.forEach((user) => {
             const newUser = { ...user };
             newUser.isAccepted = false;

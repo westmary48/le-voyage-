@@ -1,6 +1,11 @@
 import React from 'react';
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import 'firebase/storage';
+
+import FileUploader from 'react-firebase-file-uploader';
+// import mapRequests from '../../helpers/data/mapRequests';
+
 
 import tripData from '../../helpers/data/tripData';
 
@@ -14,6 +19,8 @@ const defaultTrip = {
   endDate: '',
   city: '',
   country: '',
+  lat: '',
+  long: '',
 };
 
 class NewTrip extends React.Component {
@@ -31,8 +38,6 @@ class NewTrip extends React.Component {
 
   descriptionChange = e => this.formFieldStringState('description', e);
 
-  imageChange = e => this.formFieldStringState('image', e);
-
   startDateChange = e => this.formFieldStringState('startDate', e);
 
   endDateChange = e => this.formFieldStringState('endDate', e);
@@ -41,10 +46,27 @@ class NewTrip extends React.Component {
 
   countryChange = e => this.formFieldStringState('country', e);
 
+  latChange = e => this.formFieldStringState('lat', e);
+
+  longChange = e => this.formFieldStringState('long', e);
+
+  handleUploadSuccess = (filename) => {
+    this.setState({
+      image: filename,
+    });
+    firebase.storage().ref('images').child(filename).getDownloadURL()
+      .then((url) => {
+        this.setState({ imageUrl: url });
+        this.props.imageUrl(url);
+      })
+      .catch(err => console.error('no image url', err));
+  };
+
   formSubmit = (e) => {
     e.preventDefault();
     const saveForm = { ...this.state.newTrip };
     saveForm.uid = firebase.auth().currentUser.uid;
+    saveForm.imageUrl = this.state.imageUrl;
     tripData.postTrip(saveForm)
       .then(() => this.props.history.push('/home'))
       .catch(err => console.error('unable to save', err));
@@ -79,27 +101,14 @@ class NewTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="imageUrl">Image</label>
-            <input
-              type="img"
-              className="form-control"
-              id="imageUrl"
-              placeholder="url"
-              value={newTrip.imageUrl}
-              onChange={this.imageUrlChange}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="startDate">Start Date</label>
-            <input
-              type="text"
-              className="form-control"
-              id="startDate"
-              placeholder="10/15/2019"
-              value={newTrip.startDate}
-              onChange={this.startDateChange}
-            />
-          </div>
+                <label htmlFor="itemImage">Image</label>
+                <FileUploader
+                  accept='image/*'
+                  name='image'
+                  storageRef={firebase.storage().ref('images/')}
+                  onUploadSuccess={this.handleUploadSuccess}
+                />
+              </div>
           <div className="form-group">
             <label htmlFor="endDate">End Date</label>
             <input
@@ -120,6 +129,28 @@ class NewTrip extends React.Component {
               placeholder="New York"
               value={newTrip.city}
               onChange={this.cityChange}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="lat"> Latitude</label>
+            <input
+              type="text"
+              className="form-control"
+              id="lat"
+              placeholder="48.8566"
+              value={newTrip.lat}
+              onChange={this.latChange}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="long"> Longitude</label>
+            <input
+              type="text"
+              className="form-control"
+              id="long"
+              placeholder="23.3522"
+              value={newTrip.long}
+              onChange={this.longChange}
             />
           </div>
           <div className="form-group">

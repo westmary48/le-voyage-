@@ -32,25 +32,25 @@ class UpcomingItem extends React.Component {
     const makeButtons = () => {
       if (future.uid === uid) {
         return (
-          <div className="col-2">
+          <div className="col">
             <button className="btn btn-primary" onClick={this.editUpcomingTrip}>Edit</button>
             <button className="btn btn-danger" onClick={this.deleteUpcomingTrip}>Delete</button>
           </div>
         );
       }
-      return <div className="col-2"></div>;
     };
     return (
-      <li className="upcoming-item text-center">
-        <div className="col-9">
+      <div className="UpcomingTripCard col-12">
+        <div className="card">
+          <div className="card-body">
           <h4>{future.name}</h4>
           <p>{future.city}</p>
           <p>{future.country}</p>
-          <p>{future.startDate}</p>
-          <p>{future.endDate}</p>
+          <p>{future.date}</p>
         </div>
         { makeButtons() }
-      </li>
+      </div>
+      </div>
     );
   }
 }
