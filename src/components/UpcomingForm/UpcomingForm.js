@@ -42,7 +42,7 @@ class UpcomingForm extends React.Component {
 
   countryChange = e => this.formFieldStringState('country', e);
 
-  date = e => this.formFieldStringState('date', e);
+  dateChange = e => this.formFieldStringState('date', e);
 
   cityChange = e => this.formFieldStringState('city', e);
 
@@ -133,7 +133,7 @@ class UpcomingForm extends React.Component {
               className="form-control"
               id="date"
               aria-describedby="dateHelp"
-              placeholder="10/13/2000"
+              placeholder="December 25 2020"
               value={newUpcoming.date}
               onChange={this.dateChange}
             />
