@@ -14,7 +14,7 @@ const defaultUpcoming = {
   city: '',
   country: '',
   upcoming: '',
-  startDate: '',
+  date: '',
   endDate: '',
 };
 
@@ -42,7 +42,7 @@ class UpcomingForm extends React.Component {
 
   countryChange = e => this.formFieldStringState('country', e);
 
-  startDateChange = e => this.formFieldStringState('startDate', e);
+  date = e => this.formFieldStringState('date', e);
 
   cityChange = e => this.formFieldStringState('city', e);
 
@@ -127,15 +127,15 @@ class UpcomingForm extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="startDate">Date:</label>
+            <label htmlFor="date">Date:</label>
             <input
               type="text"
               className="form-control"
-              id="startDate"
+              id="date"
               aria-describedby="dateHelp"
               placeholder="10/13/2000"
-              value={newUpcoming.startDate}
-              onChange={this.startDateChange}
+              value={newUpcoming.date}
+              onChange={this.dateChange}
             />
           </div>
           <button className="btn btn-danger">Save Upcoming Trip</button>

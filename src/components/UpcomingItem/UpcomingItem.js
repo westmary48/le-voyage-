@@ -1,11 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// import CountDown from 'react-native-countdown-component';
 import upcomingShape from '../../helpers/propz/upcomingShape';
 import authRequests from '../../helpers/data/authRequests';
-
-import Clock from '../Clock/Clock';
 
 import './UpcomingItem.scss';
 
@@ -29,8 +26,6 @@ class UpcomingItem extends React.Component {
   }
 
   render() {
-    const currentDate = new Date();
-    const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
     const { future } = this.props;
     const uid = authRequests.getCurrentUid();
 
@@ -51,11 +46,9 @@ class UpcomingItem extends React.Component {
           <h4>{future.name}</h4>
           <p>{future.city}</p>
           <p>{future.country}</p>
-          <p>{future.startDate}</p>
+          <p>{future.date}</p>
         </div>
         { makeButtons() }
-        <h2>Countdown</h2>
-        <Clock date={`${year}-12-24T00:00:00`} />
       </div>
       </div>
     );

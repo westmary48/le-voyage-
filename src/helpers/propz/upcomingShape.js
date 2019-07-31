@@ -5,7 +5,7 @@ const upcomingCardShape = PropTypes.shape({
   name: PropTypes.string.isRequired,
   city: PropTypes.string.isRequired,
   country: PropTypes.string.isRequired,
-  startDate: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
   uid: PropTypes.string.isRequired,
 });
 

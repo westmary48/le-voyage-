@@ -101,9 +101,7 @@ render() {
     myFriends,
   } = this.state;
   const { uid } = firebase.auth().currentUser;
-  console.error(uid);
   const friendsTrips = this.state.trips.filter(a => a.uid !== uid);
-  console.error(friendsTrips);
   const undiscoveredFriendCards = undiscoveredFriends.map(undiscovered => (
     <div className="card border-dark" key={undiscovered.id}>
       <h5 className="card-header bg-secondary">{undiscovered.userName}</h5>
