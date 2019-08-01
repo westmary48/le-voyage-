@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import tripShape from '../../helpers/propz/tripShape';
 
+import './TripCard.scss';
+
 
 class TripCard extends React.Component {
   static propTypes = {
