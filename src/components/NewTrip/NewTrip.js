@@ -75,7 +75,7 @@ class NewTrip extends React.Component {
   render() {
     const { newTrip } = this.state;
     return (
-      <div className="cotainer">
+      <div className="newTrip-container">
         <h1>New Trip</h1>
         <form onSubmit={this.formSubmit}>
           <div className="form-group">
