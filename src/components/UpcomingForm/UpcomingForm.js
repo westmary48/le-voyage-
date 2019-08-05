@@ -82,14 +82,15 @@ class UpcomingForm extends React.Component {
     const { isEditing } = this.props;
     const title = () => {
       if (isEditing) {
-        return <h2>Edit Upcoming Trip:</h2>;
+        return <h2 className = "upcomingtitle">Edit Upcoming Trip:</h2>;
       }
-      return <h2>Add Upcoming Trip:</h2>;
+      return <h2 className = "upcomingtitle">Add Upcoming Trip:</h2>;
     };
     return (
       <div className="upcoming-form col">
         {title()}
         <form onSubmit={this.formSubmit}>
+        <div class = "leftside">
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input
@@ -113,7 +114,9 @@ class UpcomingForm extends React.Component {
               value={newUpcoming.city}
               onChange={this.cityChange}
             />
+            </div>
           </div>
+          <div className = "rightside">
           <div className="form-group">
             <label htmlFor="country">Country:</label>
             <input
@@ -138,7 +141,8 @@ class UpcomingForm extends React.Component {
               onChange={this.dateChange}
             />
           </div>
-          <button className="btn btn-danger">Save Upcoming Trip</button>
+          </div>
+          <button className="btn btn-danger save">Save Upcoming Trip</button>
         </form>
       </div>
     );
