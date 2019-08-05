@@ -78,16 +78,16 @@ class UpcomingTrips extends React.Component {
 
     return (
       <div className="Upcoming text-center col">
-        <div className="row">
-          <div className="col">
-            <div>{ upcomingItemComponents }</div>
-          </div>
-          <div className="col">
+        {/* <div className="row"> */}
+        <div className="col">
             <UpcomingForm
               onSubmit={this.formSubmitUpcoming}
               isEditing={isEditing}
               editId={editId}
             />
+          </div>
+          <div className="col">
+            <div>{ upcomingItemComponents }</div>
           </div>
           <div className=" App-title row">
           <div className='col'>
@@ -101,7 +101,7 @@ class UpcomingTrips extends React.Component {
         </Form>
         </div>
       </div>
-     </div>
+    //  </div>
     );
   }
 }

@@ -33,24 +33,29 @@ class UpcomingItem extends React.Component {
       if (future.uid === uid) {
         return (
           <div className="col">
-            <button className="btn btn-primary" onClick={this.editUpcomingTrip}>Edit</button>
-            <button className="btn btn-danger" onClick={this.deleteUpcomingTrip}>Delete</button>
+            <button className="btn card_btn" onClick={this.editUpcomingTrip}>Edit</button>
+            <button className="btn card_btn" onClick={this.deleteUpcomingTrip}>Delete</button>
           </div>
         );
       }
     };
     return (
       <div className="UpcomingTripCard col-12">
+          <ul class="cards">
+    <li class="cards_item">
         <div className="card">
-          <div className="card-body">
-          <h4>{future.name}</h4>
-          <p>{future.city}</p>
-          <p>{future.country}</p>
-          <p>{future.date}</p>
+        <img class="card_image" src="https://picsum.photos/500/300/?image=10"/>
+          <div className="card_content">
+          <h4 className="card_title">{future.name}</h4>
+          <h4 className = "card_text">{future.city}</h4>
+          <p className = "card_text">{future.country}</p>
+          <p className = "card_text">{future.date}</p>
         </div>
         { makeButtons() }
-      </div>
-      </div>
+        </div>
+    </li>
+    </ul>
+    </div>
     );
   }
 }
