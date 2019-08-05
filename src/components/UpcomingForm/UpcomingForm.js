@@ -82,9 +82,9 @@ class UpcomingForm extends React.Component {
     const { isEditing } = this.props;
     const title = () => {
       if (isEditing) {
-        return <h2 className = "upcomingtitle">Edit Upcoming Trip:</h2>;
+        return <h2 className = "upcomingtitle">Edit Upcoming Trip</h2>;
       }
-      return <h2 className = "upcomingtitle">Add Upcoming Trip:</h2>;
+      return <h2 className = "upcomingtitle">Add Upcoming Trip</h2>;
     };
     return (
       <div className="upcoming-form col">
@@ -92,7 +92,7 @@ class UpcomingForm extends React.Component {
         <form onSubmit={this.formSubmit}>
         <div class = "leftside">
           <div className="form-group">
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name"><strong>NAME:</strong></label>
             <input
               type="text"
               className="form-control"
@@ -104,7 +104,7 @@ class UpcomingForm extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="city">City:</label>
+            <label htmlFor="city"><strong>CITY:</strong></label>
             <input
               type="text"
               className="form-control"
@@ -118,7 +118,7 @@ class UpcomingForm extends React.Component {
           </div>
           <div className = "rightside">
           <div className="form-group">
-            <label htmlFor="country">Country:</label>
+            <label htmlFor="country"><strong>COUNTRY:</strong></label>
             <input
               type="text"
               className="form-control"
@@ -130,7 +130,7 @@ class UpcomingForm extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="date">Date:</label>
+            <label htmlFor="date"><strong>DATE:</strong></label>
             <input
               type="text"
               className="form-control"
