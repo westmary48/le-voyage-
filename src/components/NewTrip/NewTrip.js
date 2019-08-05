@@ -74,7 +74,7 @@ class NewTrip extends React.Component {
     const { newTrip } = this.state;
     return (
       <div className="newTrip-container">
-        <h1 class = "newtrip-title">ADD NEW TRIP</h1>
+        <h1 className = "newtrip-title">ADD NEW TRIP</h1>
         <form onSubmit={this.formSubmit}>
         <div class = "leftside">
           <div className="form-group">

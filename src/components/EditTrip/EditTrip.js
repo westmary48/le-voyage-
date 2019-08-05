@@ -58,11 +58,12 @@ class EditTrip extends React.Component {
   render() {
     const { newTrip } = this.state;
     return (
-      <div className="editTrip">
-        <h1>Edit Trip</h1>
+      <div className="editTrip-container">
+        <h1 className = "editTrip-title">EDIT TRIP</h1>
         <form onSubmit={this.formSubmit}>
+        <div class = "leftside">
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">NAME</label>
             <input
               type="text"
               className="form-control"
@@ -73,7 +74,7 @@ class EditTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description">DESCRIPTION</label>
             <input
               type="text"
               className="form-control"
@@ -84,7 +85,7 @@ class EditTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="imageUrl">Image</label>
+            <label htmlFor="imageUrl">IMAGE</label>
             <input
               type="img"
               className="form-control"
@@ -95,7 +96,7 @@ class EditTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="startDate">Start Date</label>
+            <label htmlFor="startDate">START DATE</label>
             <input
               type="text"
               className="form-control"
@@ -106,7 +107,7 @@ class EditTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="endDate">End Date</label>
+            <label htmlFor="endDate">END DATE</label>
             <input
               type="text"
               className="form-control"
@@ -116,8 +117,10 @@ class EditTrip extends React.Component {
               onChange={this.endDateChange}
             />
           </div>
+          </div>
+          <div class = "rightside">
           <div className="form-group">
-            <label htmlFor="city"> City</label>
+            <label htmlFor="city">CITY</label>
             <input
               type="text"
               className="form-control"
@@ -128,7 +131,7 @@ class EditTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="country">Country</label>
+            <label htmlFor="country">COUNTRY</label>
             <input
               type="text"
               className="form-control"
@@ -138,7 +141,8 @@ class EditTrip extends React.Component {
               onChange={this.countryChange}
             />
           </div>
-          <button type="submit" className="btn btn-primary">Save Trip</button>
+          </div>
+          <button type="submit" className="btn btn-primary save">UPDATE TRIP</button>
         </form>
       </div>
     );
