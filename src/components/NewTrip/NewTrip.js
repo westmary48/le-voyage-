@@ -75,11 +75,11 @@ class NewTrip extends React.Component {
   render() {
     const { newTrip } = this.state;
     return (
-      <div className="New Trip">
+      <div className="newTrip-container">
         <h1>New Trip</h1>
         <form onSubmit={this.formSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name"><strong>NAME</strong></label>
             <input
               type="text"
               className="form-control"
@@ -90,7 +90,7 @@ class NewTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description"><strong>DESCRIPTION</strong></label>
             <input
               type="text"
               className="form-control"
@@ -101,7 +101,7 @@ class NewTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-                <label htmlFor="itemImage">Image</label>
+                <label htmlFor="itemImage"><strong>IMAGE</strong></label>
                 <FileUploader
                   accept='image/*'
                   name='image'
@@ -109,8 +109,19 @@ class NewTrip extends React.Component {
                   onUploadSuccess={this.handleUploadSuccess}
                 />
               </div>
+              <div className="form-group">
+            <label htmlFor="startDate"><strong>START DATE</strong></label>
+            <input
+              type="text"
+              className="form-control"
+              id="startDate"
+              placeholder="10/20/2019"
+              value={newTrip.startDate}
+              onChange={this.startDateChange}
+            />
+          </div>
           <div className="form-group">
-            <label htmlFor="endDate">End Date</label>
+            <label htmlFor="endDate"><strong>END DATE</strong></label>
             <input
               type="text"
               className="form-control"
@@ -121,7 +132,7 @@ class NewTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="city"> City</label>
+            <label htmlFor="city"><strong>CITY</strong></label>
             <input
               type="text"
               className="form-control"
@@ -132,7 +143,7 @@ class NewTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="lat"> Latitude</label>
+            <label htmlFor="lat"><strong>LATITUDE</strong></label>
             <input
               type="text"
               className="form-control"
@@ -143,7 +154,7 @@ class NewTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="long"> Longitude</label>
+            <label htmlFor="long"><strong>LONGITUDE</strong></label>
             <input
               type="text"
               className="form-control"
@@ -154,7 +165,7 @@ class NewTrip extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="country">Country</label>
+            <label htmlFor="country"><strong>COUNTRY</strong></label>
             <input
               type="text"
               className="form-control"
