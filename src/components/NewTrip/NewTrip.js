@@ -4,8 +4,6 @@ import 'firebase/auth';
 import 'firebase/storage';
 
 import FileUploader from 'react-firebase-file-uploader';
-// import mapRequests from '../../helpers/data/mapRequests';
-
 
 import tripData from '../../helpers/data/tripData';
 
@@ -76,8 +74,9 @@ class NewTrip extends React.Component {
     const { newTrip } = this.state;
     return (
       <div className="newTrip-container">
-        <h1>New Trip</h1>
+        <h1 class = "newtrip-title">ADD NEW TRIP</h1>
         <form onSubmit={this.formSubmit}>
+        <div class = "leftside">
           <div className="form-group">
             <label htmlFor="name"><strong>NAME</strong></label>
             <input
@@ -131,6 +130,8 @@ class NewTrip extends React.Component {
               onChange={this.endDateChange}
             />
           </div>
+          </div>
+          <div class = "rightside">
           <div className="form-group">
             <label htmlFor="city"><strong>CITY</strong></label>
             <input
@@ -175,7 +176,8 @@ class NewTrip extends React.Component {
               onChange={this.countryChange}
             />
           </div>
-          <button type="submit" className="btn btn-primary">Save Trip</button>
+          </div>
+          <button type="submit" className="btn btn-primary save">Save Trip</button>
         </form>
       </div>
     );
