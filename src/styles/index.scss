@@ -370,40 +370,31 @@ textarea {
 .upcoming-cards {
 display:inline-block;
 }
+.friends-title {
+  font: 900 100px/1 'Source Sans Pro', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff; margin:
+  auto; text-align: center;
+  letter-spacing: 0px;
+  padding-top: 0%;
+  padding-bottom: 5%;
+  position: relative;
+  text-align: center;
+  width: 100%;
 
-// .card-header-friends{
-//   background-color:#f7786b;
-// }
+  text-shadow:     0 1px 0 hsl(174,5%,80%),
+	                 0 2px 0 hsl(174,5%,75%),
+	                 0 3px 0 hsl(174,5%,70%),
+	                 0 4px 0 hsl(174,5%,66%),
+	                 0 5px 0 hsl(174,5%,64%),
+	                 0 6px 0 hsl(174,5%,62%),
+	                 0 7px 0 hsl(174,5%,61%),
+	                 0 8px 0 hsl(174,5%,60%),
 
-// .SingleTrip {
-//   cursor: pointer;
-//   height: 600px;
-//   perspective: 600;
-//   position: relative;
-//   width: 600px;
-// }
-// .singleCard {
-//   height: 600px;
-//   position: absolute;
-//   transform-style: preserve-3d;
-//   transition: all 1s ease-in-out;
-//   width: 600px;
-// }
-// .singleCard:hover {
-//   transform: rotateY(180deg);
-// }
-// .singleCard .side {
-//   backface-visibility: hidden;
-//   border-radius: 6px;
-//   height: 100%;
-//   position: absolute;
-//   overflow: hidden;
-//   width: 100%;
-// }
-// .singleCard .back {
-//   background: #eaeaed;
-//   color: #0087cc;
-//   line-height: 150px;
-//   text-align: center;
-//   transform: rotateY(180deg);
-// }
+	                 0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.2),
+	              0 10px 10px rgba(0,0,0,.2),
+	              0 20px 20px rgba(0,0,0,.3);
+}

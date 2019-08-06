@@ -154,26 +154,27 @@ render() {
   ));
   return (
 <div className="Friends text-center col">
-        <h1>Friends</h1>
+        <h1 className = "friends-title">Friends</h1>
         <div className="row">
           <div className="col-4">
-            <h3>Undiscovered Friends</h3>
+            <h3 className = "friends-sub">Undiscovered Friends</h3>
             <hr/>
             { undiscoveredFriendCards }
           </div>
           <div className="col-4">
-            <h3>Pending Friendships</h3>
+            <h3 className = "friends-sub">Pending Friendships</h3>
             <hr/>
             { pendingFriendshipsCards }
           </div>
           <div className="col-4">
-            <h3>My Friends</h3>
+            <h3 className = "friends-sub">My Friends</h3>
             <hr/>
             { myFriendsCards }
           </div>
           <div className="row">
+            <div className = "col">
             <h3>My Friends Trips</h3>
-            <hr/>
+            </div>
             { myFriendsTripsCards }
           </div>
           </div>
