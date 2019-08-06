@@ -325,23 +325,22 @@ textarea {
 }
 
 .SingleTrip {
-  background: #2db34a;
+  background: #08f6d7;
   border-radius: 6px;
   cursor: pointer;
-  height: 800px;
-  line-height: 800px;
+  height: 1000px;
+  line-height: 1000px;
   text-align: center;
   transition-property: background, border-radius;
   transition-duration: 1s;
   transition-timing-function: linear;
-  width: 800px;
+  width: 1000px;
+  margin: auto;
 }
 .SingleTrip:hover {
-  background: #ff7b29;
+  background: #F6AA93;
   border-radius: 50%;
 }
-
-///
 
 // .SingleTrip {
 //   cursor: pointer;
