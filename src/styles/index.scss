@@ -325,7 +325,7 @@ textarea {
 }
 
 .SingleTrip {
-  background: #08f6d7;
+  background: #affaf0;
   border-radius: 6px;
   cursor: pointer;
   height: 1000px;
@@ -365,6 +365,14 @@ textarea {
 	              0 10px 10px rgba(0,0,0,.2),
 	              0 20px 20px rgba(0,0,0,.3);
 }
+
+.upcoming-cards {
+display:inline-block;
+}
+
+// .card-header-friends{
+//   background-color:#f7786b;
+// }
 
 // .SingleTrip {
 //   cursor: pointer;

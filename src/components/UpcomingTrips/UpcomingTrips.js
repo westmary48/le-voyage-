@@ -104,7 +104,7 @@ class UpcomingTrips extends React.Component {
         </Form>
         </div>
       </div>
-    //  </div>
+      </div>
     );
   }
 }

@@ -23,5 +23,47 @@
     "isAccepted" : false,
     "isPending" : true,
     "uid" : "12345"
+  },
+  "friend5" : {
+    "friendUid" : "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "isAccepted" : true,
+    "isPending" : false,
+    "uid" : "66666"
+  },
+  "friend6" : {
+    "friendUid" : "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "isAccepted" : true,
+    "isPending" : false,
+    "uid" : "88888"
+  },
+  "friend7" : {
+    "friendUid" : "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "isAccepted" : true,
+    "isPending" : false,
+    "uid" : "99999"
+  },
+  "friend8" : {
+    "friendUid" : "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "isAccepted" : true,
+    "isPending" : false,
+    "uid" : "12121212"
+  },
+  "friend9" : {
+    "friendUid" : "1414141414",
+    "isAccepted" : true,
+    "isPending" : false,
+    "uid" : "ya804O2nUeOthZtUuRsqwGAFYXf1"
+  },
+  "friend10" : {
+    "friendUid" : "1515151515",
+    "isAccepted" : true,
+    "isPending" : false,
+    "uid" : "ya804O2nUeOthZtUuRsqwGAFYXf1"
+  },
+  "friend11" : {
+    "friendUid" : "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "isAccepted" : true,
+    "isPending" : false,
+    "uid" : "16161616"
   }
 }

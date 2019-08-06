@@ -50,7 +50,7 @@ class TripCard extends React.Component {
             </div>
             </div>
             <button className="btn btn-danger" onClick={this.deleteThis}>Delete</button>
-            <Link className="btn btn-primary" to={editLink}>Edit</Link>
+            <Link className="btn btn-info" to={editLink}>Edit</Link>
             </div>
         </div>
       </div>

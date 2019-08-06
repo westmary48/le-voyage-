@@ -104,7 +104,7 @@ render() {
   const friendsTrips = this.state.trips.filter(a => a.uid !== uid);
   const undiscoveredFriendCards = undiscoveredFriends.map(undiscovered => (
     <div className="card border-dark" key={undiscovered.id}>
-      <h5 className="card-header bg-secondary">{undiscovered.userName}</h5>
+      <h5 className="card-header-undiscovered">{undiscovered.userName}</h5>
       <div className="card-body">
         <div className="double-wide">
           <img className="profile-img" src={undiscovered.photo} alt={undiscovered.userName}/>
@@ -117,7 +117,7 @@ render() {
   ));
   const pendingFriendshipsCards = pendingFriendships.map(pending => (
     <div className="card border-dark" key={pending.id}>
-      <h5 className="card-header bg-warning ">{pending.userName}</h5>
+      <h5 className="card-header-pending">{pending.userName}</h5>
       <div className="card-body">
         <div className="double-wide">
           <img className="profile-img" src={pending.photo} alt={pending.userName}/>
@@ -135,7 +135,7 @@ render() {
   ));
   const myFriendsCards = myFriends.map(mine => (
     <div className="card border-dark" key={mine.id}>
-      <h5 className="card-header bg-success">{mine.userName}</h5>
+      <h5 className="card-header-friends">{mine.userName}</h5>
       <div className="card-body">
         <div className="double-wide">
           <img className="profile-img" src={mine.photo} alt={mine.userName}/>
@@ -156,17 +156,17 @@ render() {
 <div className="Friends text-center col">
         <h1>Friends</h1>
         <div className="row">
-          <div className="col">
+          <div className="col-4">
             <h3>Undiscovered Friends</h3>
             <hr/>
             { undiscoveredFriendCards }
           </div>
-          <div className="col">
+          <div className="col-4">
             <h3>Pending Friendships</h3>
             <hr/>
             { pendingFriendshipsCards }
           </div>
-          <div className="col">
+          <div className="col-4">
             <h3>My Friends</h3>
             <hr/>
             { myFriendsCards }
@@ -176,8 +176,8 @@ render() {
             <hr/>
             { myFriendsTripsCards }
           </div>
+          </div>
         </div>
-      </div>
   );
 }
 }

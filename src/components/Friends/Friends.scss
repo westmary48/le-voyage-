@@ -5,6 +5,15 @@
       height: 50px;
       border-radius: 50%;
     }
+    .card-header-friends{
+      background:#f7786b;
+    }
+    .card-header-pending {
+      background: #92a8d1;
+    }
+    .card-header-undiscovered {
+      background: #affaf0
+    }
 
     .double-wide {
       display: inline;
