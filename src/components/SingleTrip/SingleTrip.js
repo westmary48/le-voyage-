@@ -35,7 +35,7 @@ class SingleTrip extends React.Component {
         <h6>{trip.description}</h6>
         <h6>{trip.startDate} {trip.endDate}</h6>
         <h6>{trip.city} {trip.country}</h6>
-        <Link className="btn btn-primary" to={editLink}>Edit</Link>
+        <Link className="btn btn-info" to={editLink}>Edit</Link>
         <button className="btn btn-danger" onClick={this.deleteTrip}>Delete</button>
         <img className = "singleImg" src = {trip.imageUrl} alt = ""/>
         </div>

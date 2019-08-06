@@ -142,7 +142,7 @@ class UpcomingForm extends React.Component {
             />
           </div>
           </div>
-          <button className="btn btn-danger save">Save Upcoming Trip</button>
+          <button className="btn btn-primary save">Save Upcoming Trip</button>
         </form>
       </div>
     );

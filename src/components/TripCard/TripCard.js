@@ -24,7 +24,7 @@ class TripCard extends React.Component {
     const singleLink = `/trip/${trip.id}`;
     const editLink = `/edit/${trip.id}`;
     return (
-      <div href = "#" className="TripCard col-4">
+      <div href = "#" className="TripCard col-3">
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">{trip.name}</h5>
