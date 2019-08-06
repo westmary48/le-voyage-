@@ -97,9 +97,9 @@ class UpcomingTrips extends React.Component {
         <div className='row'>
         <Clock
           deadline={this.state.deadline} />
-        <Form inline>
+        <Form>
           <FormControl className='Deadline-input' placeholder='new date' onChange={event => this.setState({ newDeadline: event.target.value })} />
-          <Button onClick={() => this.changeDeadline()}>Submit</Button>
+          <Button className = "save" onClick={() => this.changeDeadline()}>Submit</Button>
         </Form>
         </div>
       </div>
