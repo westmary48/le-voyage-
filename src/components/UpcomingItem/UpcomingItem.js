@@ -41,8 +41,8 @@ class UpcomingItem extends React.Component {
     };
     return (
       <div className="UpcomingTripCard">
-          <ul class="cards">
-    <li class="cards_item">
+          <ul class="upcoming-card">
+    <li class="cards-item">
         <div className="card-upcoming">
         <img className="card_image" src="https://www.pennmedicine.org/-/media/images/miscellaneous/random%20generic%20photos/person_at_airport_holding_coffee_and_luggage.ashx?mw=620&mh=408"/>
           <div className="card_content">

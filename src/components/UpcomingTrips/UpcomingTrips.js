@@ -88,7 +88,7 @@ class UpcomingTrips extends React.Component {
           <div className="col">
             { upcomingItemComponents }
           </div>
-          <div className=" App-title row">
+          <div className=" App-title">
             <div className = "row">
             </div>
           <div className='threeD row'>
