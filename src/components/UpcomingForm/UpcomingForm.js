@@ -82,9 +82,9 @@ class UpcomingForm extends React.Component {
     const { isEditing } = this.props;
     const title = () => {
       if (isEditing) {
-        return <h2 className = "upcomingtitle">Edit Upcoming Trip</h2>;
+        return <h2 className = "upcomingtitle">EDIT UPCOMING TRIP</h2>;
       }
-      return <h2 className = "upcomingtitle">Add Upcoming Trip</h2>;
+      return <h2 className = "upcomingtitle">ADD UPCOMING TRIP</h2>;
     };
     return (
       <div className="upcoming-form col">

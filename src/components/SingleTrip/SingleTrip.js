@@ -32,12 +32,26 @@ class SingleTrip extends React.Component {
       <div className="SingleTrip">
         <div className = "singleCard">
         <h3 className = "singleName">{trip.name}</h3>
-        <h6>{trip.description}</h6>
-        <h6>{trip.startDate} {trip.endDate}</h6>
-        <h6>{trip.city} {trip.country}</h6>
+        <div className = "col">
+        <h6 className = "singleColor">{trip.description}</h6>
+        </div>
+        <div className = "col">
+        <h6 className = "singleColor">{trip.startDate}</h6>
+        </div>
+        <div className = "col">
+        <h6 className = "singleColor">{trip.endDate}</h6>
+        </div>
+        <div className = "col">
+        <h6 className = "singleColor">{trip.city}</h6>
+        </div>
+        <div className = "col">
+        <h6 className = "singleColor">{trip.country}</h6>
+        </div>
+        <img className = "singleImg" src = {trip.imageUrl} alt = ""/>
+        <div className = "col">
         <Link className="btn btn-info" to={editLink}>Edit</Link>
         <button className="btn btn-danger" onClick={this.deleteTrip}>Delete</button>
-        <img className = "singleImg" src = {trip.imageUrl} alt = ""/>
+        </div>
         </div>
       </div>
     );

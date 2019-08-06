@@ -320,20 +320,28 @@ textarea {
   border-radius: 6px;
   cursor: pointer;
   height: 1000px;
-  line-height: 1000px;
+  line-height: 300px;
   text-align: center;
   transition-property: background, border-radius;
   transition-duration: 1s;
   transition-timing-function: linear;
   width: 1000px;
   margin: auto;
+  justify-content: center;
 }
 .SingleTrip:hover {
   background: #F6AA93;
   border-radius: 50%;
 }
 
-.App-title { font: 900 120px/1 'Source Sans Pro', Arial, sans-serif; text-transform: uppercase; color: #fff; margin: auto; text-align: center; letter-spacing: 0px; padding-top: 10%; }
+.App-title {
+  font: 900 120px/1 'Source Sans Pro',
+  Arial, sans-serif; text-transform:
+  uppercase; color: #fff;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 0px;
+  padding-top: 10%; }
 
 .threeD {
   position: relative;

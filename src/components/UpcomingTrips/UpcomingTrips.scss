@@ -4,6 +4,8 @@
 }
 
 .UpcomingTrips {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   font-size: 35px;
   margin-top: 20%;
