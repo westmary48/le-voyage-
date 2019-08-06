@@ -90,9 +90,12 @@ class UpcomingTrips extends React.Component {
             <div>{ upcomingItemComponents }</div>
           </div>
           <div className=" App-title row">
-          <div className='col'>
-            Countdown to {this.state.deadline}
+            <div className = "row">
+            </div>
+          <div className='threeD row'>
+            {this.state.deadline}
         </div>
+        <div className='row'>
         <Clock
           deadline={this.state.deadline} />
         <Form inline>

@@ -30,7 +30,7 @@ class SingleTrip extends React.Component {
     const editLink = `/edit/${this.props.match.params.id}`;
     return (
       <div className="SingleTrip">
-        <div class = "singleCard">
+        <div className = "singleCard">
         <h3 className = "singleName">{trip.name}</h3>
         <h6>{trip.description}</h6>
         <h6>{trip.startDate} {trip.endDate}</h6>
