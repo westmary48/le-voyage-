@@ -90,7 +90,7 @@ class UpcomingForm extends React.Component {
       <div className="upcoming-form col">
         {title()}
         <form onSubmit={this.formSubmit}>
-        <div class = "leftside">
+        <div className = "leftside">
           <div className="form-group">
             <label htmlFor="name"><strong>NAME:</strong></label>
             <input

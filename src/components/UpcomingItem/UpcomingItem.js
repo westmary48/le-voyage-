@@ -44,7 +44,7 @@ class UpcomingItem extends React.Component {
           <ul class="cards">
     <li class="cards_item">
         <div className="card-upcoming">
-        <img class="card_image" src="https://www.pennmedicine.org/-/media/images/miscellaneous/random%20generic%20photos/person_at_airport_holding_coffee_and_luggage.ashx?mw=620&mh=408"/>
+        <img className="card_image" src="https://www.pennmedicine.org/-/media/images/miscellaneous/random%20generic%20photos/person_at_airport_holding_coffee_and_luggage.ashx?mw=620&mh=408"/>
           <div className="card_content">
           <h4 className="card_title">{future.name}</h4>
           <h4 className = "card_text">{future.city}</h4>
