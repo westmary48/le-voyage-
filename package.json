@@ -13,6 +13,7 @@
     "leaflet-geosearch": "^2.7.0",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
+    "pure-react-carousel": "^1.21.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.10",
     "react-countdown-date": "^1.0.0",

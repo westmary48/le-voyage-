@@ -4,6 +4,15 @@ import React from 'react';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+import {
+  CarouselProvider,
+  Slider, Slide,
+  ButtonBack,
+  ButtonNext,
+} from 'pure-react-carousel';
+
+import 'pure-react-carousel/dist/react-carousel.es.css';
+
 
 import smashRequests from '../../helpers/data/smashRequests';
 
@@ -174,8 +183,8 @@ render() {
           <div className="row">
             <div className = "col">
             <h3>My Friends Trips</h3>
-            </div>
             { myFriendsTripsCards }
+          </div>
           </div>
           </div>
         </div>
