@@ -13,7 +13,7 @@ class FriendTripCard extends React.Component {
   render() {
     const { trip } = this.props;
     return (
-      <div className="TripCard col">
+      <div className="FriendTripCard col">
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">{trip.name}</h5>
@@ -23,7 +23,6 @@ class FriendTripCard extends React.Component {
             <h6 className="card-title">{trip.endDate}</h6>
             <h6 className="card-title">{trip.city}</h6>
             <h6 className="card-title">{trip.country}</h6>
-            {/* <button className="btn btn-danger" onClick={this.deleteThis}>Delete</button> */}
             </div>
         </div>
       </div>

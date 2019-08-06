@@ -4,16 +4,6 @@ import React from 'react';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
-import {
-  CarouselProvider,
-  Slider, Slide,
-  ButtonBack,
-  ButtonNext,
-} from 'pure-react-carousel';
-
-import 'pure-react-carousel/dist/react-carousel.es.css';
-
-
 import smashRequests from '../../helpers/data/smashRequests';
 
 import friendRequest from '../../helpers/data/friendData';
@@ -166,24 +156,28 @@ render() {
         <h1 className = "friends-title">Friends</h1>
         <div className="row">
           <div className="col-4">
-            <h3 className = "friends-sub">Undiscovered Friends</h3>
+            <h3 className = "friends-sub"><strong>Undiscovered Friends</strong></h3>
             <hr/>
             { undiscoveredFriendCards }
           </div>
           <div className="col-4">
-            <h3 className = "friends-sub">Pending Friendships</h3>
+            <h3 className = "friends-sub"><strong>Pending Friendships</strong></h3>
             <hr/>
             { pendingFriendshipsCards }
           </div>
           <div className="col-4">
-            <h3 className = "friends-sub">My Friends</h3>
+            <h3 className = "friends-sub"><strong>My Friends</strong></h3>
             <hr/>
             { myFriendsCards }
           </div>
           <div className="row">
             <div className = "col">
-            <h3>My Friends Trips</h3>
+            <h3 className = "friends-sub"><strong>My Friends Trips</strong></h3>
+            <div className= "col">
+              <div className = "row">
             { myFriendsTripsCards }
+            </div>
+            </div>
           </div>
           </div>
           </div>

@@ -78,7 +78,6 @@ class UpcomingTrips extends React.Component {
 
     return (
       <div className="Upcoming text-center col">
-        {/* <div className="row"> */}
         <div className="col">
             <UpcomingForm
               onSubmit={this.formSubmitUpcoming}
@@ -87,7 +86,7 @@ class UpcomingTrips extends React.Component {
             />
           </div>
           <div className="col">
-            <div>{ upcomingItemComponents }</div>
+            { upcomingItemComponents }
           </div>
           <div className=" App-title row">
             <div className = "row">
