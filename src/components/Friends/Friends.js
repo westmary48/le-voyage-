@@ -126,7 +126,7 @@ render() {
           { pending.friendRequest === 'me'
             ? <p>Waiting</p>
             : <div>
-              <button className="btn btn-warning" id={pending.friendRequestId} onClick={this.confirmFriendship}>Accept!</button>
+              <button className="btn btn-primary" id={pending.friendRequestId} onClick={this.confirmFriendship}>Accept!</button>
               <button className="btn btn-danger" id={pending.friendRequestId} onClick={this.friendshipOver}>Nope</button>
             </div>}
         </div>
