@@ -9,7 +9,7 @@
       "city":"Paris",
       "country":"France",
       "lat": 48.8566,
-      "long": 23.3522
+      "long": 2.3522
     },
     "trip2": {
       "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -20,9 +20,8 @@
       "endDate":"02/28/2019",
       "city":"Marrakech",
       "country":"Morocco",
-      "lat": 48.8566,
-      "long": 2.3522
-
+      "lat": 31.7917,
+      "long": 7.0926
     },
     "trip3": {
       "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -33,8 +32,8 @@
       "endDate":"06/22/207",
       "city":"Vegas",
       "country":"United States",
-      "lat": 49.8566,
-      "long": 2.3522
+      "lat": 36.1699,
+      "long": 115.1398
     },
     "trip4": {
       "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -45,8 +44,8 @@
       "endDate":"04/14/2018",
       "city":"Rome",
       "country":"Italy",
-      "lat": 50.8566,
-      "long": 2.3522
+      "lat": 41.9028,
+      "long": 12.4964
     },
     "trip5": {
       "uid": "11111",
@@ -140,5 +139,137 @@
       "endDate":"08/20/2015",
       "city":"Cabo San Lucas",
       "country":"Mexico"
-    }
+  },
+  "trip10": {
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "name" : "Predators on Broadway",
+    "description": "Katy's getting married",
+    "imageUrl": "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F821125998%2F960x0.jpg%3Ffit%3Dscale",
+    "startDate": "06/20/2019",
+    "endDate":"06/28/2019",
+    "city":"Nashville",
+    "country":"United States",
+    "lat": 36.1627,
+    "long": 2.3522
+  },
+  "trip11": {
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "name" : "Hollywood",
+    "description": "Our trip to LA",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7q2smb4LGAVpihRGIpx35mBKgyNM61uguHhSPi1OLzmX_cBvFsQ",
+    "startDate": "12/05/2014",
+    "endDate":"12/08/2014",
+    "city":"Los Angeles",
+    "country":"United States",
+    "lat": 34.0522,
+    "long": 118.2437
+  },
+  "trip12": {
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "name" : "Beer Olympics",
+    "description": "Gorgeous view from Berlin",
+    "imageUrl": "https://www.berlin.de/binaries/asset/image_assets/3137175/source/1564556733/624x468/",
+    "startDate": "11/02/2017",
+    "endDate":"11/08/2017",
+    "city":"Berlin",
+    "country":"Germany",
+    "lat": 52.5200,
+    "long": 13.4050
+  },
+  "trip13": {
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "name" : "Down Under",
+    "description": "So many beautiful creatures",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN48KRl0UfikPb6F1xJlgK57YvjQrPLiAXX8VyamvWsUVdygLb",
+    "startDate": "05/21/2016",
+    "endDate":"05/31/2016",
+    "city":"Sydney",
+    "country":"Australia",
+    "lat": 33.8688,
+    "long": 151.2093
+  },
+  "trip14": {
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "name" : "All of the Lights",
+    "description": "Ultramodern meets Traditional",
+    "imageUrl": "http://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F39a8c612-65be-11e8-909e-3e8bc48c88c9.jpg?crop=1600%2C900%2C0%2C0&resize=685",
+    "startDate": "08/20/2015",
+    "endDate":"08/28/2015",
+    "city":"Tokyo",
+    "country":"Japan",
+    "lat": 35.6762,
+    "long": 139.6503
+  },
+  "trip15": {
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "name" : "Machu Picchu",
+    "description": "Amazon Rainforest and Machu Picchu",
+    "imageUrl": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1200/600/92/media/abd/refresh/central-south-america/peru-vacations/adventures-by-disney-central-and-south-america-peru-day-05-top-machu-picchu2.jpg?cb=1",
+    "startDate": "09/07/2011",
+    "endDate":"09/17/2011",
+    "city":"Peru",
+    "country":"South America",
+    "lat": 9.1900,
+    "long": 75.0152
+  },
+  "trip16": {
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "name" : "Our trip to Mexico",
+    "description": "Best food Ive ever eaten",
+    "imageUrl": "https://travel.home.sndimg.com/content/dam/images/travel/fullrights/2016/07/1/0/CI_Daniel-Klinckwort-Ana-Laframboise-El-Tizoncito.jpg.rend.hgtvcom.616.411.suffix/1491593017762.jpeg",
+    "startDate": "07/20/2012",
+    "endDate":"07/28/2012",
+    "city":"Mexico City",
+    "country":"Mexico",
+    "lat": 19.4326,
+    "long": 99.1332
+  },
+  "trip17": {
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "name" : "Big Apple",
+    "description": "Hamilton was amazing",
+    "imageUrl": "https://lonelyplanetwpnews.imgix.net/2019/06/broadway.jpg",
+    "startDate": "02/17/2019",
+    "endDate":"02/19/2019",
+    "city":"New York",
+    "country":"United States",
+    "lat": 40.7128,
+    "long": 74.0060
+  },
+  "trip18": {
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "name" : "Greece",
+    "description": "Such beautiful scenery",
+    "imageUrl": "https://www.discovergreece.com/~/media/images/article-background-images/santorini-the-one-and-only/santorini-view.ashx",
+    "startDate": "01/10/2018",
+    "endDate":"01/17/2018",
+    "city":"Santorini",
+    "country":"Greece",
+    "lat": 36.3932,
+    "long":25.4615
+  },
+  "trip19": {
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "name" : "A Whole New World",
+    "description": "St Basil's Cathedral",
+    "imageUrl": "https://drwyjmricaxm7.cloudfront.net/blog/wp-content/uploads/2018/07/St-Basils-Cathedral-in-Moscow-Russia.jpg",
+    "startDate": "03/14/2014",
+    "endDate":"03/20/2014",
+    "city":"Moscow",
+    "country":"Russia",
+    "lat": 55.7558,
+    "long": 37.6173
+  },
+  "trip20": {
+    "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
+    "name" : "Oh Canada",
+    "description": "Family Trip to Canada",
+    "imageUrl": "https://daily.sevenfifty.com/app/uploads/2017/11/SFD_48hrs_Vancouver2_CR_iStock_2520x1420-768x433.jpg",
+    "startDate": "06/03/2015",
+    "endDate":"06/20/2015",
+    "city":"Vancouver",
+    "country":"Canada",
+    "lat": 49.2827,
+    "long": 123.1207
   }
+}

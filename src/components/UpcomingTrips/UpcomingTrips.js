@@ -93,13 +93,15 @@ class UpcomingTrips extends React.Component {
           </div>
           <div className=" App-title row">
             <div className = "col">
-            </div>
           <div className='threeD row'>
             {this.state.deadline}
+        </div>
         </div>
         <div className='row'>
         <Clock
           deadline={this.state.deadline} />
+          </div>
+          <div className = "row">
         <Form>
           <FormControl className='Deadline-input' placeholder='new date' onChange={event => this.setState({ newDeadline: event.target.value })} />
           <Button className = "save" onClick={() => this.changeDeadline()}>Submit</Button>
