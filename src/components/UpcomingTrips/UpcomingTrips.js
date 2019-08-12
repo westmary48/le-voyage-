@@ -16,7 +16,7 @@ class UpcomingTrips extends React.Component {
     upcoming: [],
     isEditing: false,
     editId: '-1',
-    deadline: 'December 25 2019',
+    deadline: 'August 14 2019',
     newDeadline: '',
   }
 
@@ -95,12 +95,10 @@ class UpcomingTrips extends React.Component {
             <div className = "col">
           <div className='threeD row'>
             {this.state.deadline}
-        </div>
-        </div>
-        <div className='row'>
         <Clock
           deadline={this.state.deadline} />
           </div>
+        </div>
           <div className = "row">
         <Form>
           <FormControl className='Deadline-input' placeholder='new date' onChange={event => this.setState({ newDeadline: event.target.value })} />

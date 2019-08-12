@@ -11,7 +11,7 @@ class Search extends React.Component {
     return (
       <div className="row">
         <div className="input-field">
-          <label className = "searchLabel"><strong>SEARCH</strong></label>
+          {/* <label className = "searchLabel"><strong>SEARCH</strong></label> */}
           <input className = "inputSearch" type="text" onKeyUp={this.handleSearch.bind(this)}/>
         </div>
       </div>
