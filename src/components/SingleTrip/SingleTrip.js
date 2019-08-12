@@ -30,15 +30,29 @@ class SingleTrip extends React.Component {
     const editLink = `/edit/${this.props.match.params.id}`;
     return (
       <div className="SingleTrip">
-        <h1>{trip.name}</h1>
-        <h2>{trip.description}</h2>
+        <div className = "singleCard">
+        <h3 className = "singleName">{trip.name}</h3>
+        <div className = "col">
+        <h6 className = "singleColor">{trip.description}</h6>
+        </div>
+        <div className = "col">
+        <h6 className = "singleColor">{trip.startDate}</h6>
+        </div>
+        <div className = "col">
+        <h6 className = "singleColor">{trip.endDate}</h6>
+        </div>
+        <div className = "col">
+        <h6 className = "singleColor">{trip.city}</h6>
+        </div>
+        <div className = "col">
+        <h6 className = "singleColor">{trip.country}</h6>
+        </div>
         <img className = "singleImg" src = {trip.imageUrl} alt = ""/>
-        <h4>{trip.startDate}</h4>
-        <h5>{trip.endDate}</h5>
-        <h5>{trip.city}</h5>
-        <h5>{trip.country}</h5>
-        <Link className="btn btn-primary" to={editLink}>Edit</Link>
+        <div className = "col">
+        <Link className="btn btn-info" to={editLink}>Edit</Link>
         <button className="btn btn-danger" onClick={this.deleteTrip}>Delete</button>
+        </div>
+        </div>
       </div>
     );
   }

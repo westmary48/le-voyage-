@@ -82,16 +82,17 @@ class UpcomingForm extends React.Component {
     const { isEditing } = this.props;
     const title = () => {
       if (isEditing) {
-        return <h2>Edit Upcoming Trip:</h2>;
+        return <h2 className = "upcomingtitle">EDIT UPCOMING TRIP</h2>;
       }
-      return <h2>Add Upcoming Trip:</h2>;
+      return <h2 className = "upcomingtitle">ADD UPCOMING TRIP</h2>;
     };
     return (
       <div className="upcoming-form col">
         {title()}
         <form onSubmit={this.formSubmit}>
+        <div className = "leftside">
           <div className="form-group">
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name"><strong>NAME:</strong></label>
             <input
               type="text"
               className="form-control"
@@ -103,7 +104,7 @@ class UpcomingForm extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="city">City:</label>
+            <label htmlFor="city"><strong>CITY:</strong></label>
             <input
               type="text"
               className="form-control"
@@ -113,9 +114,11 @@ class UpcomingForm extends React.Component {
               value={newUpcoming.city}
               onChange={this.cityChange}
             />
+            </div>
           </div>
+          <div className = "rightside">
           <div className="form-group">
-            <label htmlFor="country">Country:</label>
+            <label htmlFor="country"><strong>COUNTRY:</strong></label>
             <input
               type="text"
               className="form-control"
@@ -127,7 +130,7 @@ class UpcomingForm extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="date">Date:</label>
+            <label htmlFor="date"><strong>DATE:</strong></label>
             <input
               type="text"
               className="form-control"
@@ -138,7 +141,8 @@ class UpcomingForm extends React.Component {
               onChange={this.dateChange}
             />
           </div>
-          <button className="btn btn-danger">Save Upcoming Trip</button>
+          </div>
+          <button className="btn btn-primary save">Save Upcoming Trip</button>
         </form>
       </div>
     );

@@ -1,11 +1,31 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+@import url(https://fonts.googleapis.com/css?family=Lato&subset=latin-ext);
+
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
+
+
+// .Auth {
+//   background: url('https://i.pinimg.com/originals/ab/66/18/ab66182841c1880a51e694b1d2d2ed93.jpg') no-repeat center center fixed;
+// -webkit-background-size: cover;
+// -moz-background-size: cover;
+// -o-background-size: cover;
+// background-size: cover;
+// min-height: 100%;
+// min-width: 1024px;
+// width: 100%;
+// height: 100%;
+// }
+
+
+.App {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url('https://mymodernmet.com/wp/wp-content/uploads/2018/12/family-photographer-full-time-1-996x1024.jpg') no-repeat center center fixed;
+  background: url('https://data.whicdn.com/images/186683488/superthumb.jpg?t=1435787269') no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -16,7 +36,369 @@ width: 100%;
 height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.TripCard {
+	background: white;
+	display: inline;
+	float: left;
+	margin: 0 40px 30px;
+	padding: 10px 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	transition: all .15s linear;
+	z-index: 0;
+	position: relative;
+  transform: rotate(4deg);
+  // justify-content: space-between;
+}
+
+.TripCard:after {
+	color: #333;
+	font-size: 20px;
+	content: attr(title);
+	position: relative;
+	top:15px;
+}
+.card-image {
+	display: block;
+	width: inherit;
+}
+.TripCard:hover{
+	transform: rotate(0deg);
+	transform: scale(1.2);
+	z-index:10;
+	box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}
+
+body {
+  margin: auto;
+  background: #eaeaea;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.info p {
+  text-align:center;
+  color: #999;
+  text-transform:none;
+  font-weight:600;
+  font-size:15px;
+  margin-top:2px
+}
+
+.info i {
+  color:#F6AA93;
+}
+.newtrip-title {
+  font-size: 40px;
+  background: #F6AA93 none repeat scroll 0% 0%;
+  color: rgb(255, 255, 255);
+  padding: 30px 30px;
+  border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  text-shadow: none;
+  text-align:center;
+}
+
+form {
+  border-radius: 5px;
+  max-width:700px;
+  width:100%;
+  margin: 5% auto;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+p span {
+  color: #F00;
+}
+
+p {
+  margin: 0px;
+  font-weight: 500;
+  line-height: 2;
+  color:#333;
+}
+
+h1 {
+  text-align:center;
+  color: #666;
+  text-shadow: 1px 1px 0px #FFF;
+  margin:50px 0px 0px 0px
+}
+
+input {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  width: 75%;
+  height: 40px;
+  float: left;
+  padding: 0px 15px;
+}
+
+a {
+  text-decoration:inherit
+}
+
+textarea {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #EEE;
+  margin: 0;
+  width: 75%;
+  height: 130px;
+  float: left;
+  padding: 0px 15px;
+}
+
+.form-group {
+  overflow: hidden;
+  clear: both;
+}
+
+.newTrip-container {
+  padding: 30px 30px;
+  margin: auto;
+}
+
+.editTrip-container {
+  padding: 30px 30px;
+  margin: auto;
+}
+
+.save{
+  background-color: #81BDA4;
+  color: #FFF;
+  text-align: center;
+  width: 100%;
+  border:0;
+  padding: 17px 25px;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.leftside {
+  width:49.5%;
+  float:left;
+  border-right: 1px dotted #CCC;
+  box-sizing: border-box;
+  padding: 0px 15px 0px 0px;
+}
+
+.rightside {
+  width:49.5%;
+  float:right;
+  box-sizing: border-box;
+  padding: 0px 0px 0px 15px;
+}
+
+
+.upcomingtitle {
+  font-size: 40px;
+  background: #F6AA93 none repeat scroll 0% 0%;
+  color: rgb(255, 255, 255);
+  padding: 30px 30px;
+  border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  text-shadow: none;
+  text-align:center;
+}
+
+.editTrip-title {
+    font-size: 40px;
+    background: #F6AA93 none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    padding: 30px 30px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+    text-shadow: none;
+    text-align:center;
+}
+
+
+.singleView {
+  text-align: center;
+  margin: 10px auto 0;
+}
+
+.singleLink {
+  display: inline-block;
+  background-color: #1984c3;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: Courier, sans-serif;
+  padding: 0.2em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5em;
+  border-bottom: 0.25em solid #0f5177;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  box-shadow: 0 2px 3px #ccc;
+  position: relative;
+}
+
+.singleLink:hover {
+  background-color: #1e9feb;
+  border-bottom-width: 0;
+  margin-top: 0.2em;
+}
+
+.UpcomingTripCard {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.card_image {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn .card_btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+
+.upcoming-card {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card-upcoming {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.SingleTrip {
+  background: #affaf0;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 1000px;
+  line-height: 300px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  width: 1000px;
+  margin: auto;
+  justify-content: center;
+}
+.SingleTrip:hover {
+  background: #F6AA93;
+  border-radius: 50%;
+}
+
+.App-title {
+  font: 900 120px/1 'Source Sans Pro',
+  Arial, sans-serif; text-transform:
+  uppercase; color: #fff;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 0px;
+  padding-top: 10%; }
+
+.threeD {
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  text-shadow:     0 1px 0 hsl(174,5%,80%),
+	                 0 2px 0 hsl(174,5%,75%),
+	                 0 3px 0 hsl(174,5%,70%),
+	                 0 4px 0 hsl(174,5%,66%),
+	                 0 5px 0 hsl(174,5%,64%),
+	                 0 6px 0 hsl(174,5%,62%),
+	                 0 7px 0 hsl(174,5%,61%),
+	                 0 8px 0 hsl(174,5%,60%),
+
+	                 0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.2),
+	              0 10px 10px rgba(0,0,0,.2),
+	              0 20px 20px rgba(0,0,0,.3);
+}
+
+// .upcoming-cards {
+// display:inline-block;
+// }
+.friends-title {
+  font: 900 100px/1 'Source Sans Pro', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff; margin:
+  auto; text-align: center;
+  letter-spacing: 0px;
+  padding-top: 0%;
+  padding-bottom: 5%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  text-shadow:     0 1px 0 hsl(174,5%,80%),
+	                 0 2px 0 hsl(174,5%,75%),
+	                 0 3px 0 hsl(174,5%,70%),
+	                 0 4px 0 hsl(174,5%,66%),
+	                 0 5px 0 hsl(174,5%,64%),
+	                 0 6px 0 hsl(174,5%,62%),
+	                 0 7px 0 hsl(174,5%,61%),
+	                 0 8px 0 hsl(174,5%,60%),
+
+	                 0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.2),
+	              0 10px 10px rgba(0,0,0,.2),
+	              0 20px 20px rgba(0,0,0,.3);
+}
+
+.friends-sub {
+  font-size: 30px;
+  color: white;
 }

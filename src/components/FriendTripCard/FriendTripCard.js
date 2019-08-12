@@ -13,7 +13,7 @@ class FriendTripCard extends React.Component {
   render() {
     const { trip } = this.props;
     return (
-      <div className="TripCard col-4">
+      <div className="FriendTripCard col">
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">{trip.name}</h5>

@@ -78,30 +78,37 @@ class UpcomingTrips extends React.Component {
 
     return (
       <div className="Upcoming text-center col">
-        <div className="row">
-          <div className="col">
-            <div>{ upcomingItemComponents }</div>
-          </div>
-          <div className="col">
+        {/* <div className="row"> */}
+        <div className="col">
             <UpcomingForm
               onSubmit={this.formSubmitUpcoming}
               isEditing={isEditing}
               editId={editId}
             />
           </div>
+          <div className="col">
+            <div className = "row">
+            { upcomingItemComponents }
+          </div>
+          </div>
           <div className=" App-title row">
-          <div className='col'>
-            Countdown to {this.state.deadline}
+            <div className = "col">
+          <div className='threeD row'>
+            {this.state.deadline}
         </div>
+        </div>
+        <div className='row'>
         <Clock
           deadline={this.state.deadline} />
-        <Form inline>
+          </div>
+          <div className = "row">
+        <Form>
           <FormControl className='Deadline-input' placeholder='new date' onChange={event => this.setState({ newDeadline: event.target.value })} />
-          <Button onClick={() => this.changeDeadline()}>Submit</Button>
+          <Button className = "save" onClick={() => this.changeDeadline()}>Submit</Button>
         </Form>
         </div>
       </div>
-     </div>
+      </div>
     );
   }
 }

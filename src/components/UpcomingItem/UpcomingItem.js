@@ -33,24 +33,29 @@ class UpcomingItem extends React.Component {
       if (future.uid === uid) {
         return (
           <div className="col">
-            <button className="btn btn-primary" onClick={this.editUpcomingTrip}>Edit</button>
-            <button className="btn btn-danger" onClick={this.deleteUpcomingTrip}>Delete</button>
+            <button className="btn card_btn" onClick={this.editUpcomingTrip}>Edit</button>
+            <button className="btn card_btn" onClick={this.deleteUpcomingTrip}>Delete</button>
           </div>
         );
       }
     };
     return (
-      <div className="UpcomingTripCard col-12">
-        <div className="card">
-          <div className="card-body">
-          <h4>{future.name}</h4>
-          <p>{future.city}</p>
-          <p>{future.country}</p>
-          <p>{future.date}</p>
+      <div className="UpcomingTripCard col-4">
+          <div className="upcoming-card">
+    <div className="cards-item">
+        <div className="card-upcoming">
+        <img className="card_image" src="https://www.pennmedicine.org/-/media/images/miscellaneous/random%20generic%20photos/person_at_airport_holding_coffee_and_luggage.ashx?mw=620&mh=408"/>
+          <div className="card_content">
+          <h4 className="card_title">{future.name}</h4>
+          <h4 className = "card_text">{future.city}</h4>
+          <p className = "card_text">{future.country}</p>
+          <p className = "card_text">{future.date}</p>
         </div>
         { makeButtons() }
-      </div>
-      </div>
+        </div>
+\    </div>
+    </div>
+    </div>
     );
   }
 }

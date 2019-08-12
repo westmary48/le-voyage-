@@ -4,12 +4,15 @@
 }
 
 .UpcomingTrips {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   font-size: 35px;
   margin-top: 20%;
 }
 
 .App-title {
+  display: block;
   font-size: 50px;
 }
 
