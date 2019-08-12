@@ -32,8 +32,8 @@
       "endDate":"06/22/207",
       "city":"Vegas",
       "country":"United States",
-      "lat": 36.1699,
-      "long": 115.1398
+      "lat": 48.3699,
+      "long": -115.1398
     },
     "trip4": {
       "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -150,7 +150,7 @@
     "city":"Nashville",
     "country":"United States",
     "lat": 36.1627,
-    "long": 2.3522
+    "long": -86.7816
   },
   "trip11": {
     "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -162,7 +162,7 @@
     "city":"Los Angeles",
     "country":"United States",
     "lat": 34.0522,
-    "long": 118.2437
+    "long": -118.2437
   },
   "trip12": {
     "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -185,7 +185,7 @@
     "endDate":"05/31/2016",
     "city":"Sydney",
     "country":"Australia",
-    "lat": 33.8688,
+    "lat": -33.8688,
     "long": 151.2093
   },
   "trip14": {
@@ -210,7 +210,7 @@
     "city":"Peru",
     "country":"South America",
     "lat": 9.1900,
-    "long": 75.0152
+    "long": -75.0152
   },
   "trip16": {
     "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -222,7 +222,7 @@
     "city":"Mexico City",
     "country":"Mexico",
     "lat": 19.4326,
-    "long": 99.1332
+    "long": -99.1332
   },
   "trip17": {
     "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -234,7 +234,7 @@
     "city":"New York",
     "country":"United States",
     "lat": 40.7128,
-    "long": 74.0060
+    "long": -74.0060
   },
   "trip18": {
     "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -270,6 +270,6 @@
     "city":"Vancouver",
     "country":"Canada",
     "lat": 49.2827,
-    "long": 123.1207
+    "long": -123.1207
   }
 }
