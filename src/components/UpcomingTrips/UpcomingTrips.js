@@ -16,7 +16,7 @@ class UpcomingTrips extends React.Component {
     upcoming: [],
     isEditing: false,
     editId: '-1',
-    deadline: 'August 14 2019',
+    deadline: 'August 20 2019',
     newDeadline: '',
   }
 

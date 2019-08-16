@@ -49,7 +49,7 @@
     },
     "trip5": {
       "uid": "11111",
-      "name" : "West Family Reunion",
+      "name" : "Harriet Tubman",
       "description": "swimming in the sun",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
@@ -60,8 +60,8 @@
       "long": 2.3522
     },
     "trip6": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
+      "uid": "12345",
+      "name" : "Miley Cyrus",
       "description": "swimming in the sun",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
@@ -71,8 +71,8 @@
       "long": 2.3522
     },
     "trip7": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
+      "uid": "22222",
+      "name" : "Clint Eastwood",
       "description": "swimming in the sun",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
@@ -81,8 +81,8 @@
       "country":"Mexico"
     },
     "trip8": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
+      "uid": "33333",
+      "name" : "Eminem",
       "description": "swimming in the sun",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
@@ -91,8 +91,8 @@
       "country":"Mexico"
     },
     "trip9": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
+      "uid": "44444",
+      "name" : "William Shatner",
       "description": "swimming in the sun",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
@@ -101,8 +101,8 @@
       "country":"Mexico"
     },
     "trip6": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
+      "uid": "66666",
+      "name" : "Barbra Streisand",
       "description": "swimming in the sun",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
@@ -111,8 +111,8 @@
       "country":"Mexico"
     },
     "trip7": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
+      "uid": "77777",
+      "name" : "Taylor Swift",
       "description": "swimming in the sun",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
@@ -121,9 +121,9 @@
       "country":"Mexico"
     },
     "trip8": {
-      "uid": "11111",
+      "uid": "88888",
       "name" : "West Family Reunion",
-      "description": "swimming in the sun",
+      "description": "George Washington",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
@@ -132,7 +132,7 @@
     },
     "trip9": {
       "uid": "99999",
-      "name" : "West Family Reunion",
+      "name" : "Ryan Reynolds",
       "description": "swimming in the sun",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
@@ -271,5 +271,75 @@
     "country":"Canada",
     "lat": 49.2827,
     "long": -123.1207
-  }
+  },
+"trip21": {
+  "uid": "0000000",
+  "name" : "Britney Spears",
+  "description": "swimming in the sun",
+  "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+  "startDate": "08/17/2015",
+  "endDate":"08/20/2015",
+  "city":"Cabo San Lucas",
+  "country":"Mexico"
+    },
+"trip22": {
+  "uid": "12121212",
+  "name" : "Serena Williams",
+  "description": "swimming in the sun",
+  "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+  "startDate": "08/17/2015",
+  "endDate":"08/20/2015",
+  "city":"Cabo San Lucas",
+  "country":"Mexico"
+},
+"trip23": {
+  "uid": "1313131313",
+  "name" : "Napoleon",
+  "description": "swimming in the sun",
+  "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+  "startDate": "08/17/2015",
+  "endDate":"08/20/2015",
+  "city":"Cabo San Lucas",
+  "country":"Mexico"
+},
+"trip24": {
+  "uid": "1414141414",
+  "name" : "Leonardo da Vinci",
+  "description": "swimming in the sun",
+  "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+  "startDate": "08/17/2015",
+  "endDate":"08/20/2015",
+  "city":"Cabo San Lucas",
+  "country":"Mexico"
+},
+"trip25": {
+  "uid": "1515151515",
+  "name" : "Meryl Streep",
+  "description": "swimming in the sun",
+  "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+  "startDate": "08/17/2015",
+  "endDate":"08/20/2015",
+  "city":"Cabo San Lucas",
+  "country":"Mexico"
+},
+"trip26": {
+  "uid": "16161616",
+  "name" : "Darth Vader",
+  "description": "swimming in the sun",
+  "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+  "startDate": "08/17/2015",
+  "endDate":"08/20/2015",
+  "city":"Cabo San Lucas",
+  "country":"Mexico"
+},
+"trip27": {
+  "uid": "67890",
+  "name" : "Thomas Jefferson",
+  "description": "swimming in the sun",
+  "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+  "startDate": "08/17/2015",
+  "endDate":"08/20/2015",
+  "city":"Cabo San Lucas",
+  "country":"Mexico"
+}
 }
