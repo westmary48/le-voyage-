@@ -76,7 +76,7 @@ class NewTrip extends React.Component {
       <div className="newTrip-container">
         <h1 className = "newtrip-title">ADD NEW TRIP</h1>
         <form onSubmit={this.formSubmit}>
-        <div class = "leftside">
+        <div className = "leftside">
           <div className="form-group">
             <label htmlFor="name"><strong>NAME</strong></label>
             <input
@@ -131,7 +131,7 @@ class NewTrip extends React.Component {
             />
           </div>
           </div>
-          <div class = "rightside">
+          <div className = "rightside">
           <div className="form-group">
             <label htmlFor="city"><strong>CITY</strong></label>
             <input
