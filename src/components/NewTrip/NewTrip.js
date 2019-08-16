@@ -144,6 +144,17 @@ class NewTrip extends React.Component {
             />
           </div>
           <div className="form-group">
+            <label htmlFor="country"><strong>COUNTRY</strong></label>
+            <input
+              type="text"
+              className="form-control"
+              id="country"
+              placeholder="United States"
+              value={newTrip.country}
+              onChange={this.countryChange}
+            />
+          </div>
+          <div className="form-group">
             <label htmlFor="lat"><strong>LATITUDE</strong></label>
             <input
               type="text"
@@ -163,17 +174,6 @@ class NewTrip extends React.Component {
               placeholder="23.3522"
               value={newTrip.long}
               onChange={this.longChange}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="country"><strong>COUNTRY</strong></label>
-            <input
-              type="text"
-              className="form-control"
-              id="country"
-              placeholder="United Stated"
-              value={newTrip.country}
-              onChange={this.countryChange}
             />
           </div>
           </div>
