@@ -170,7 +170,7 @@ render() {
             <hr/>
             { myFriendsCards }
           </div>
-          <div className="row">
+          <div className="row friends-trips-container">
             <div className = "col">
             <h3 className = "friends-sub"><strong>My Friends Trips</strong></h3>
             <div className= "col">
