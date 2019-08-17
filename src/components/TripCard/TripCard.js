@@ -33,7 +33,7 @@ class TripCard extends React.Component {
             </div>
             <img className = "card-img" src = {trip.imageUrl} alt = "" />
             <p className="card-text">{trip.description}</p>
-            <div class = "row">
+            <div className = "row">
             <div className = "col">
             <h6 className="card-image">{trip.startDate}</h6>
             </div>
@@ -41,7 +41,7 @@ class TripCard extends React.Component {
             <h6 className="card-title">{trip.endDate}</h6>
             </div>
             </div>
-            <div class = "row">
+            <div className = "row">
             <div className = "col">
             <h6 className="card-title">{trip.city}</h6>
             </div>

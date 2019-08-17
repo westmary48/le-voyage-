@@ -76,7 +76,7 @@ class NewTrip extends React.Component {
       <div className="newTrip-container">
         <h1 className = "newtrip-title">ADD NEW TRIP</h1>
         <form onSubmit={this.formSubmit}>
-        <div class = "leftside">
+        <div className = "leftside">
           <div className="form-group">
             <label htmlFor="name"><strong>NAME</strong></label>
             <input
@@ -131,7 +131,7 @@ class NewTrip extends React.Component {
             />
           </div>
           </div>
-          <div class = "rightside">
+          <div className = "rightside">
           <div className="form-group">
             <label htmlFor="city"><strong>CITY</strong></label>
             <input
@@ -141,6 +141,17 @@ class NewTrip extends React.Component {
               placeholder="New York"
               value={newTrip.city}
               onChange={this.cityChange}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="country"><strong>COUNTRY</strong></label>
+            <input
+              type="text"
+              className="form-control"
+              id="country"
+              placeholder="United States"
+              value={newTrip.country}
+              onChange={this.countryChange}
             />
           </div>
           <div className="form-group">
@@ -163,17 +174,6 @@ class NewTrip extends React.Component {
               placeholder="23.3522"
               value={newTrip.long}
               onChange={this.longChange}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="country"><strong>COUNTRY</strong></label>
-            <input
-              type="text"
-              className="form-control"
-              id="country"
-              placeholder="United Stated"
-              value={newTrip.country}
-              onChange={this.countryChange}
             />
           </div>
           </div>

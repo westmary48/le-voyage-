@@ -49,30 +49,27 @@
     },
     "trip5": {
       "uid": "11111",
-      "name" : "West Family Reunion",
-      "description": "swimming in the sun",
-      "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+      "name" : "Joey",
+      "description": "Where we stayed",
+      "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGLAXAV9HfdY/v0/1200x750.jpg",
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
-      "city":"Cabo San Lucas",
-      "country":"Mexico",
-      "lat": 48.8566,
-      "long": 2.3522
+      "city":"Fiji",
+      "country":"Fiji"
     },
     "trip6": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
-      "description": "swimming in the sun",
-      "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+      "uid": "12345",
+      "name" : "Monica",
+      "description": "View from our gondola",
+      "imageUrl": "https://media.tacdn.com/media/attractions-splice-spp-360x240/07/93/21/8e.jpg",
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
-      "city":"Cabo San Lucas",
-      "lat": 48.8566,
-      "long": 2.3522
+      "city":"Venice",
+      "country":"Italy"
     },
     "trip7": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
+      "uid": "22222",
+      "name" : "Chandler",
       "description": "swimming in the sun",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
@@ -81,8 +78,8 @@
       "country":"Mexico"
     },
     "trip8": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
+      "uid": "33333",
+      "name" : "Ross",
       "description": "swimming in the sun",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
@@ -91,39 +88,39 @@
       "country":"Mexico"
     },
     "trip9": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
-      "description": "swimming in the sun",
+      "uid": "44444",
+      "name" : "Phoebe",
+      "description": "The Falls",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
-      "city":"Cabo San Lucas",
-      "country":"Mexico"
+      "city":"Niagra Falls",
+      "country":"United States"
     },
     "trip6": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
-      "description": "swimming in the sun",
-      "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+      "uid": "66666",
+      "name" : "Jill",
+      "description": "Vinyard",
+      "imageUrl": "https://daily.sevenfifty.com/app/uploads/2017/06/SFD_Wine_Region_Napa_CR_iStock_2520x1890.jpg",
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
-      "city":"Cabo San Lucas",
-      "country":"Mexico"
+      "city":"Napa Valley",
+      "country":"United States"
     },
     "trip7": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
-      "description": "swimming in the sun",
-      "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+      "uid": "77777",
+      "name" : "Cassie",
+      "description": "Our Ski Lodge",
+      "imageUrl": "https://cms.coppercolorado.com/sites/copper/files/styles/medium/public/2017-10/aboutcopper_3.jpg?itok=SLkZ0VBg",
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
-      "city":"Cabo San Lucas",
-      "country":"Mexico"
+      "city":"Copper",
+      "country":"United States"
     },
     "trip8": {
-      "uid": "11111",
-      "name" : "West Family Reunion",
-      "description": "swimming in the sun",
+      "uid": "88888",
+      "name" : "Susie",
+      "description": "So pretty",
       "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
@@ -132,13 +129,13 @@
     },
     "trip9": {
       "uid": "99999",
-      "name" : "West Family Reunion",
-      "description": "swimming in the sun",
-      "imageUrl": "https://afar-production.imgix.net/uploads/syndication/holland_americas/images/dBAZZYtbru/original_C_hero_SSB-99-10670_b.JPG?w=750&h=563&fit=crop",
+      "name" : "Tommy",
+      "description": "The house I rented",
+      "imageUrl": "https://welcome.miami.edu/_assets/images/homepage-images/experience-um-images/campus-pictures_61-copy-scc-400x400.jpg",
       "startDate": "08/17/2015",
       "endDate":"08/20/2015",
-      "city":"Cabo San Lucas",
-      "country":"Mexico"
+      "city":"Miami",
+      "country":"United States"
   },
   "trip10": {
     "uid": "ya804O2nUeOthZtUuRsqwGAFYXf1",
@@ -271,5 +268,15 @@
     "country":"Canada",
     "lat": 49.2827,
     "long": -123.1207
-  }
+  },
+"trip27": {
+  "uid": "67890",
+  "name" : "Rachel",
+  "description": "Just gorgeous",
+  "imageUrl": "https://cdn.aarp.net/content/dam/aarp/livable-communities/images-2017-sized-for-AARPe/images-2017/1140-honolulu-hawaii-age-friendly-city.imgcache.rev596cf014113653f47ae9fad0dc22585b.jpg",
+  "startDate": "08/17/2015",
+  "endDate":"08/20/2015",
+  "city":"Honolulu",
+  "country":"United States"
+}
 }
