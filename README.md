@@ -36,6 +36,9 @@ Le Voyage is a Responsive CRUD application that allows users to save all of thei
 - Once your friend request has been approved, you may see your friends trips at the bottom of the page( flip cards)
 
 
+Inline-style:
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
 ## Have fun!!!
 
 
