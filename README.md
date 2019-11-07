@@ -37,7 +37,21 @@ Le Voyage is a Responsive CRUD application that allows users to save all of thei
 
 
 Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+![alt text](https://github.com/westmary48/le-voyage-/blob/master/src/components/images/home.png "Logo Title Text 1")
+
+
+![alt text](https://raw.githubusercontent.com/westmary48/le-voyage-/master/src/components/images/addtrip.png "Logo Title Text 1")
+
+![alt text](https://raw.githubusercontent.com/westmary48/le-voyage-/master/src/components/images/upcoming.png "Logo Title Text 1")
+
+![alt text](https://raw.githubusercontent.com/westmary48/le-voyage-/master/src/components/images/countdown.png "Logo Title Text 1")
+
+![alt text](https://raw.githubusercontent.com/westmary48/le-voyage-/master/src/components/images/friends.png "Logo Title Text 1")
+
+![alt text](https://raw.githubusercontent.com/westmary48/le-voyage-/master/src/components/images/map.png "Logo Title Text 1")
+
+
 
 ## Have fun!!!
 
