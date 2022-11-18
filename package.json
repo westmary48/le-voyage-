@@ -27,7 +27,7 @@
     "react-leaflet": "^2.4.0",
     "react-native-countdown-component": "^2.5.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-search-field": "^1.0.0",
     "reactstrap": "^8.0.1",
     "styled-components": "^4.3.2"
